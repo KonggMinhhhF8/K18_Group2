@@ -1,0 +1,157 @@
+.Banner{
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    max-width: 1596px;
+    gap: 50px;
+    border: 2px dashed #B3B3B2 ;
+    border-radius: 12px;
+    padding: 80px 0  80px  80px;
+    flex-shrink: 1;
+    position: relative;
+    top: 100px;
+    stroke-dash-corner: 10px;
+}
+
+.Banner-Title{
+    display: flex;
+    flex-direction: column;
+    max-width: 1216px;
+    width: 100%;
+    gap: 30px;
+}
+
+.Banner-Title > h1{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+.Banner-Title > p{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: #676665;
+
+}
+
+.Products--List{
+    max-width: 432px;
+    max-height: 63px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 14px;
+    margin-top: 50px;
+}
+
+.Products--List a{
+    display: block;
+    border-radius: 12px;
+    border: 1px dashed #262626;
+    padding: 18px 24px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+
+}
+
+.Products--List a:hover{
+    background-color: #C7BAAA;
+    color: #0F0F0F;
+}
+
+
+/*------------------------Tablet--------------------------*/
+
+
+@media screen and (max-width: 1440px){
+
+    .Banner{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        gap: 40px;
+
+        max-width: 1280px;
+        margin: 80px auto 0 ;
+
+        border: 1.5px dashed #B3B3B2;
+        border-radius: 12px;
+        padding: 0;
+    }
+
+    .Container-Banner{
+        flex: 1;
+        padding: 60px 0 60px 60px;
+        border-radius: 12px;
+    }
+
+    .Banner-Title{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        max-width: 970px;
+        width: 100%;
+    }
+
+    .Banner-Title > h1{
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 100%;
+        text-transform: uppercase;
+    }
+
+    .Banner-Title > p{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        color: #676665;
+    }
+
+    .Products--List{
+        display: flex;
+        gap: 10px;
+        margin-top: 40px;
+        max-width: 367px;
+        width: 100%;
+    }
+
+    .Products--List a{
+        border-radius: 12px;
+        border: 1px dashed #262626;
+        padding: 18px 24px;
+        gap: 10px;
+
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.5;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .Products--List a:hover{
+        background-color: #C7BAAA;
+        color: #0F0F0F;
+    }
+
+    .Banner-Image{
+        flex-shrink: 0;
+    }
+
+    .Banner-Image img{
+        width: 220px;
+        height: 360px;
+        background-size: cover;
+        background-image: url("../icons/Banner/image-Banner.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+}
+
+

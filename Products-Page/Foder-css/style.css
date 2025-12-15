@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    Background-color: #0F0F0F;
+    color: white;
+    margin: 0;
+    flex-shrink: 1;
+}
+html body{
+    padding-top: 124.5px;
+}
+
+/*--------------------------Tablet--------------------------*/
+@media screen and (max-width: 1440px){
+    *{
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        text-decoration: none;
+        Background-color: #0F0F0F;
+        color: white;
+        margin: 0;
+        border: 0;
+        flex-shrink: 1;
+    }
+    html body{
+        padding-top: 0;
+    }
+
+}
+
+@media screen and (max-width: 390px){
+    *{
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        text-decoration: none;
+        Background-color: #0F0F0F;
+        color: white;
+        margin: 0;
+        border: 0;
+        flex-shrink: 1;
+
+
+    }
+    html body{
+        padding-top: 0;
+    }
+}
