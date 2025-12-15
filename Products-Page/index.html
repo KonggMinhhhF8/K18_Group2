@@ -11,12 +11,14 @@
     <link rel="stylesheet" href="/Products-Page/Foder-css/style.css">
     <link rel="stylesheet" href="/Products-Page/Foder-css/Header.css">
     <link rel="stylesheet" href="/Products-Page/Foder-css/Banner.css">
+    <!--    <link rel="stylesheet" href="/Products-Page/Foder-css/test.css">-->
 </head>
 <body>
 <header>
     <div class="Container-Header">
-        <img src="icons/Header/Abstract-Design-Left.svg" alt="Abstract Design Left">
+
         <div class="header-Top">
+            <img src="icons/Header/Abstract-Design-Left.svg" alt="Abstract Design Left">
 
             <div class="Category">
                 <a href="#">Home</a>
@@ -36,21 +38,22 @@
                 <a href="#">Contact</a>
             </div> <!--End Contact-Details-->
 
+            <img class="Banner-Image" src="icons/Header/Abstract-Design-Right.svg" alt="Abstract Design Right">
+
         </div> <!--End Header Top-->
 
-        <img class="Banner-Image" src="icons/Header/Abstract-Design-Right.svg" alt="Abstract Design Right">
 
     </div><!--End Container Header-->
 
     <!--=============Mobile==============-->
+    <input type="checkbox" id="Menu-Mobile" hidden>
 
     <div class="Responsive-Mobile">
         <a href="#">
             <img src="icons/Header/Logo.svg" alt="Logo"
                  width="130">
         </a>
-        <input type="checkbox" id="Menu-Mobile" hidden>
-        <label for="Menu-Mobile" class="Overlay"></label>
+
         <label for="Menu-Mobile" class="Button-Moblie">
             <img src="icons/Header/Button-Mobile.svg" alt="Button Mobile"
                  width="28"
@@ -59,18 +62,28 @@
 
     </div> <!--End Responsive-Mobile-->
 
+    <label for="Menu-Mobile" class="Overlay"></label>
+
     <div class="Container-List-Menu-Mobile">
+
+        <div class="Mobile-Top">
+            <img src="icons/Header/Logo.svg" alt="Logo">
+            <label for="Menu-Mobile" class="Times">&times;</label>
+        </div>
+
         <label for="Menu-Mobile" class="List-Menu-Mobile">
             <a href="#">Home</a>
             <a href="#">Products</a>
             <a href="#">
-                <img src="icons/Header/Cart.svg" alt="Cart Icon">
+                <img src="icons/Header/Cart-Mobile.svg" alt="Cart Icon"> <span>Cart</span>
             </a>
             <a href="#">Contact</a>
 
         </label> <!-- End List-Menu-Mobile-->
 
+
     </div><!--End Container-List-Menu-Mobile-->
+
 </header>
 
 <main>
@@ -82,6 +95,13 @@
                     latest trends and timeless classics</p>
 
             </div> <!--End Banner Title-->
+
+            <div class="Banner-Title-Mobile">
+                <h1>Explore the Latest Trends and Timeless Classics</h1>
+                <p>Dive into the world of fashion excellence at StyleLoom.</p>
+
+            </div> <!--End Banner Title Mobile-->
+
             <div class="Products--List">
                 <a href="#">All</a>
                 <a href="#">Mens</a>

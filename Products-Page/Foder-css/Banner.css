@@ -63,6 +63,7 @@
 .Products--List a:hover{
     background-color: #C7BAAA;
     color: #0F0F0F;
+    border: none;
 }
 
 
@@ -154,4 +155,84 @@
 
 }
 
+@media screen and (max-width: 390px){
 
+    .Banner-Title{
+        display: none;
+    }
+
+    .Banner-Image{
+        display: none;
+    }
+
+    .Banner{
+       max-width: 358px;
+       width: 100%;
+       border-width: 1px;
+       border-style: dashed;
+       border-color: #262626;
+       padding: 30px 20px;
+       gap: 30px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 50px;
+
+
+   }
+
+    .Container-Banner{
+        padding: 0;
+        border-radius: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 318px;
+        width: 100%;
+
+    }
+    .Banner-Title-Mobile{
+        max-width: 318px;
+        width: 100%;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Banner-Title-Mobile > h1{
+        max-width: 318px;
+        width: 100%;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 100%;
+        text-transform: uppercase;
+    }
+    .Banner-Title-Mobile > p{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 150%;
+        color: #676665;
+    }
+
+    .Products--List{
+        max-width: 318px;
+        width: 100%;
+        margin-top: 30px;
+        gap: 7px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-shrink:1;
+
+
+    }
+    .Products--List a{
+        padding: 14px 20px;
+        font-size: 14px;
+        line-height: 150%;
+    }
+}
