@@ -1,16 +1,14 @@
 .Banner{
     display: flex;
-    margin: 0 auto;
     align-items: center;
     max-width: 1596px;
     gap: 50px;
-    border: 2px dashed #B3B3B2 ;
+    border: 2px dashed #262626;
     border-radius: 12px;
     padding: 80px 0  80px  80px;
     flex-shrink: 1;
-    position: relative;
-    top: 100px;
     stroke-dash-corner: 10px;
+    margin-top: 200px;
 }
 
 .Banner-Title{
@@ -173,13 +171,9 @@
        border-color: #262626;
        padding: 30px 20px;
        gap: 30px;
-        margin: 0 auto;
+        margin-top: 171px;
         display: flex;
         flex-direction: column;
-        position: relative;
-        top: 50px;
-
-
    }
 
     .Container-Banner{

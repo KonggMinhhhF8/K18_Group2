@@ -1,0 +1,166 @@
+/* ================= RESET ================= */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background-color: #0F0F0F;
+    color: #FFFFFF;
+}
+
+/* ================= CONTAINER HEADER ================= */
+.Container-Header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #0F0F0F;
+    z-index: 999;
+}
+
+/* ================= HEADER TOP ================= */
+.header-Top{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 1596px;
+    width: 100%;
+    margin: 0 auto;
+
+    padding: clamp(20px, 3vw, 30px) 0;
+    border-bottom: 1px dashed #262626;
+}
+
+/* ================= DECOR IMAGES ================= */
+.header-Top > img{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: clamp(40px, 6vw, 80px);
+    height: auto;
+    pointer-events: none;
+}
+
+.header-Top > img:first-of-type{
+    left: clamp(-80px, -6vw, -30px);
+}
+
+.header-Top > img:last-of-type{
+    right: clamp(-80px, -6vw, -30px);
+}
+
+/* ================= CATEGORY ================= */
+.Category{
+    display: flex;
+    gap: 10px;
+}
+
+.Category a{
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.Category a:first-of-type{
+    padding: clamp(12px, 2vw, 18px) clamp(18px, 2.5vw, 24px);
+    border-radius: 12px;
+    border: 1px dashed #262626;
+    color: #B3B3B2;
+    font-size: clamp(14px, 2vw, 18px);
+}
+
+.Category a:last-of-type{
+    padding: clamp(12px, 2vw, 18px) clamp(20px, 3vw, 30px);
+    border-radius: 12px;
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+    font-size: clamp(14px, 2vw, 18px);
+}
+
+/* ================= PRODUCT TITLE ================= */
+.Product-Title img{
+    width: clamp(100px, 12vw, 151px);
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ================= CONTACT ================= */
+.Contact-Details{
+    display: flex;
+    gap: 10px;
+}
+
+.Contact-Details a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.Contact-Details a:first-of-type{
+    width: clamp(44px, 4vw, 60px);
+    height: clamp(44px, 4vw, 60px);
+    border-radius: 12px;
+    background-color: #1A1A1A;
+}
+
+.Contact-Details a:last-of-type{
+    padding: clamp(12px, 2vw, 18px) clamp(20px, 3vw, 30px);
+    border-radius: 12px;
+    background-color: #AE9B84;
+    color: #0F0F0F;
+    font-size: clamp(14px, 2vw, 18px);
+}
+
+/* ================= TABLET ================= */
+@media (max-width: 1440px){
+    .header-Top{
+        max-width: 1280px;
+    }
+}
+
+/* ================= MOBILE ================= */
+.Responsive-Mobile{
+    display: none;
+}
+
+@media (max-width: 390px){
+    .Container-Header{
+        display: none;
+    }
+
+    .Responsive-Mobile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        max-width: 358px;
+        width: 100%;
+        margin: 0 auto;
+
+        padding: 40px 0 20px;
+        border-bottom: 1px dashed #262626;
+        background-color: #0F0F0F;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 800;
+    }
+
+    .Responsive-Mobile label{
+        background: #C2B4A3;
+        padding: 14px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+}
