@@ -7,7 +7,7 @@
           rel="stylesheet">
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>Title</title>
+    <title>Products Page</title>
     <link rel="stylesheet" href="/Products-Page/Foder-css/style.css">
     <link rel="stylesheet" href="/Products-Page/Foder-css/Header.css">
     <link rel="stylesheet" href="/Products-Page/Foder-css/Banner.css">
@@ -15,75 +15,60 @@
 </head>
 <body>
 <header>
-    <div class="Container-Header">
 
+    <div class="Container-Header-Desktop">
         <div class="header-Top">
-            <img src="icons/Header/Abstract-Design-Left.svg" alt="Abstract Design Left">
+            <div class="corner-line left">
+                <span class="dot"></span>
+            </div>
 
-            <div class="Category">
-                <a href="#">Home</a>
-                <a href="#">Products</a>
-            </div><!--End Category-->
+            <nav class="Category">
+                <a href="#" class="btn-home">Home</a>
+                <a href="#" class="btn-products">Products</a>
+            </nav>
 
             <div class="Product-Title">
-                <a href="#">
-                    <img src="icons/Header/Logo.svg" alt="Logo">
-                </a>
-            </div><!--End Product-Title-->
+                <a href="#"><img src="/Products-Page/icons/Header/Logo.svg" alt="Logo"></a>
+            </div>
 
             <div class="Contact-Details">
-                <a href="#">
-                    <img src="icons/Header/Cart.svg" alt="Cart Icon">
+                <a href="#" class="btn-cart">
+                    <img src="/Products-Page/icons/Header/Cart.svg" alt="Cart Icon" width="24">
                 </a>
-                <a href="#">Contact</a>
-            </div> <!--End Contact-Details-->
+                <a href="#" class="btn-contact">Contact</a>
+            </div>
 
-            <img class="Banner-Image" src="icons/Header/Abstract-Design-Right.svg" alt="Abstract Design Right">
+            <div class="corner-line right">
+                <span class="dot"></span>
+            </div>
+        </div>
+    </div>
 
-        </div> <!--End Header Top-->
-
-
-    </div><!--End Container Header-->
-
-    <!--=============Mobile==============-->
     <input type="checkbox" id="Menu-Mobile" hidden>
 
     <div class="Responsive-Mobile">
-        <a href="#">
-            <img src="icons/Header/Logo.svg" alt="Logo"
-                 width="130">
-        </a>
-
-        <label for="Menu-Mobile" class="Button-Moblie">
-            <img src="icons/Header/Button-Mobile.svg" alt="Button Mobile"
-                 width="28"
-                 height="28">
+        <a href="#"><img src="/Products-Page/icons/Header/Logo.svg" alt="Logo" width="100"></a>
+        <label for="Menu-Mobile" class="Button-Mobile">
+            <img src="/Products-Page/icons/Header/Button-Mobile.svg" alt="Menu" width="28">
         </label>
-
-    </div> <!--End Responsive-Mobile-->
+    </div>
 
     <label for="Menu-Mobile" class="Overlay"></label>
 
     <div class="Container-List-Menu-Mobile">
-
         <div class="Mobile-Top">
-            <img src="icons/Header/Logo.svg" alt="Logo">
+            <img src="/Products-Page/icons/Header/Logo.svg" alt="Logo" width="100">
             <label for="Menu-Mobile" class="Times">&times;</label>
         </div>
-
-        <label for="Menu-Mobile" class="List-Menu-Mobile">
+        <nav class="List-Menu-Mobile">
             <a href="#">Home</a>
             <a href="#">Products</a>
-            <a href="#">
-                <img src="icons/Header/Cart-Mobile.svg" alt="Cart Icon"> <span>Cart</span>
+            <a href="#" class="mobile-cart-link">
+                <img src="/Products-Page/icons/Header/Cart-Mobile.svg" alt="Cart"> <span>Cart</span>
             </a>
             <a href="#">Contact</a>
-
-        </label> <!-- End List-Menu-Mobile-->
-
-
-    </div><!--End Container-List-Menu-Mobile-->
-
+        </nav>
+    </div>
 </header>
 
 <main>

@@ -1,470 +1,193 @@
-.Container-Header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
+header {
     position: fixed;
+    width: 100%;
     top: 0;
-    width: 100%;
-    /*max-width: 1596px;*/
-    margin: 0 auto;
-    flex-shrink: 1;
     z-index: 999;
-
+    background-color: #0F0F0F;
 }
 
-/*----------------Header-Top------------------------*/
+.Container-Header-Desktop {
+    width: 100%;
+    padding: 0 20px;
+}
 
-.header-Top{
+.header-Top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
-
-    border-bottom: 1px dashed #262626;
-    padding-top: 30px;
-    padding-bottom: 30px;
-
-    max-width: 1596px;
-    width: 100%;
+    width: 85.77%;
     margin: 0 auto;
-    flex-shrink: 1;
+    border-bottom: 1px dashed #262626;
     position: relative;
+    padding: 30px 0;
 }
 
-.Category{
+
+.corner-line {
+    position: absolute;
+    bottom: -1px;
+    width: 60px;
+    height: 60px;
+    border-bottom: 1px dashed #262626;
+}
+
+.corner-line.left {
+    left: calc(-60px - 30px);
+    border-right: 1px dashed #262626;
+}
+
+.corner-line.right {
+    right: calc(-60px - 30px);
+    border-left: 1px dashed #262626;
+}
+
+.dot {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color:#0F0F0F;
+    z-index: 2;
+}
+
+.corner-line.left .dot {
+    right: 0;
+    bottom: 0;
+    transform: translate(50%, 50%);
+}
+
+.corner-line.right .dot {
+    left: 0;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+}
+.Category, .Contact-Details {
     display: flex;
-    justify-content: space-between;
+    gap: 14px;
     align-items: center;
-    flex-direction: row;
-    max-width: 253px;
-    width: 100%;
-    flex-shrink: 1;
-}
-
-.Category a:first-of-type{
-    max-width: 97px;
-    width: 100%;
-    height: 100%;
-    max-height: 63px;
-    border-radius: 12px;
-    border: 1px dashed #262626;
-    gap: 10px;
-    padding: 18px 24px;
-    display: block;
-    text-align: center;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 150%;
-    color: #B3B3B2;
-
-}
-
-.Category a:last-of-type{
-    width: 100%;
-    border-radius: 12px;
-    max-width: 147px;
-    gap: 10px;
-    padding: 18px 30px;
-    display: block;
-    text-align: center;
-    background-color: #1A1A1A;
-    color:#FFFFFF;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 150%;
-
+    justify-content: space-between;
 }
 
 .Product-Title{
-    max-width: 151px;
-    width: 100%;
-    font-size: 24px;
-    line-height: 28px;
+    width: 9.46%;
 }
 
-.Contact-Details{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-
-    max-width: 210px;
-    width: 100%;
-    height: 100%;
-    max-height: 63px;
-    gap: 10px;
-}
-
-.Contact-Details a:first-of-type{
-    max-width: 60px;
-    width: 100%;
-    height: 100%;
-    max-height: 60px;
-    padding: 18px;
-    border-radius: 12px;
-    display: block;
-    text-align: center;
-    background-color: #1A1A1A;
-    gap: 10px;
-}
-
-.Contact-Details a:last-of-type{
-    max-width: 136px;
-    width: 100%;
-    height: 100%;
-    max-height: 63px;
-    border-radius: 12px;
-    gap: 10px;
-    padding: 18px 30px;
-    display: block;
-    text-align: center;
-    background-color: #AE9B84;
-    color: #0F0F0F;
+.btn-home, .btn-products, .btn-contact, .btn-cart {
+    text-decoration: none;
     font-weight: 700;
     font-size: 18px;
-    line-height: 150%;
-
+    border-radius: 12px;
+    transition: 0.3s ease;
+    white-space: nowrap;
 }
 
-
-.header-Top > img:first-of-type{
-    position: absolute;
-    left: -100px;
-    top: 53px;
+.btn-home {
+    color: #B3B3B2;
+    padding: 18px 24px;
+    border: 1px dashed #262626;
 }
 
-.header-Top > img:last-of-type{
-    position: absolute;
-    right: -100px;
-    top: 53px;
+.btn-products, .btn-cart {
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+    padding: 18px 30px;
+    gap:10px;
 }
 
-.Responsive-Mobile{
+.btn-cart {
+    padding: 18px;
+}
+
+.btn-contact {
+    background-color: #AE9B84;
+    color: #0F0F0F;
+    padding: 18px 30px;
+    gap:10px;
+}
+
+.Responsive-Mobile, .Container-List-Menu-Mobile {
     display: none;
 }
-.Container-List-Menu-Mobile{
-    display: none;
+
+
+
+@media screen and (max-width: 992px) {
+    .header-Top {
+        max-width: 90%; /* Nới rộng khung để không bị vỡ */
+    }
+    /*.corner-line {*/
+    /*    display: none; !* Ẩn đường kẻ ở tablet để tránh rối mắt *!*/
+    /*}*/
 }
-/*------------------------Tablet--------------------------*!*/
 
-@media screen and (max-width: 1440px){
-    *{
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Poppins', sans-serif;
-        text-decoration: none;
-        Background-color: #0F0F0F;
-        color: white;
-        margin: 0;
-        flex-shrink: 1;
-    }
-
-
-    .Container-Header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    /*----------------Header-Top------------------------*/
-
-    .header-Top{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-
-        border-bottom: 1px dashed #262626;
-        padding-top: 30px;
-        padding-bottom: 30px;
-
-        max-width: 1280px;
-        width: 100%;
-        margin: 0 auto;
-        flex-shrink: 1;
-        position: relative;
-    }
-
-    .Category{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-        max-width: 200px;
-        width: 100%;
-        flex-shrink: 1;
-    }
-
-    .Category a:first-of-type{
-        max-width: 80px;
-        width: 100%;
-        /*height: 100%;*/
-        /*max-height: 49px;*/
-        border-radius: 8px;
-        border: 1px dashed #262626;
-        gap: 10px;
-        padding: 14px 20px;
-        display: block;
-        text-align: center;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 150%;
-        color: #B3B3B2;
-
-    }
-
-    .Category a:last-of-type{
-        width: 100%;
-        border-radius: 8px;
-        max-width: 116px;
-        gap: 10px;
-        padding: 14px 24px;
-        display: block;
-        text-align: center;
-        background-color: #1A1A1A;
-        color:#FFFFFF;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 150%;
-
-    }
-
-    .Product-Title a > img {
-        max-width: 129px;
-        width: 100%;
-       height: 100%;
-        max-height: 24px;
-        display: block;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .Contact-Details{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-
-        max-width: 177px;
-        width: 100%;
-        height: 100%;
-        max-height: 49px;
-        gap: 10px;
-    }
-
-    .Contact-Details a:first-of-type{
-        max-width: 48px;
-        width: 100%;
-        height: 100%;
-        max-height: 48px;
-        padding: 14px;
-        border-radius: 8px;
-        display: block;
-        text-align: center;
-        background-color: #1A1A1A;
-        gap: 10px;
-    }
-
-    .Contact-Details a:last-of-type{
-        max-width: 119px;
-        width: 100%;
-        height: 100%;
-        max-height: 49px;
-        border-radius: 12px;
-        gap: 10px;
-        padding: 14px 30px;
-        display: block;
-        text-align: center;
-        background-color: #AE9B84;
-        color: #0F0F0F;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 150%;
-
-    }
-
-    .header-Top > img{
-        max-width: 46px;
-        width: 100%;
-        max-height: 46px;
-        height: 100%;
-    }
-
-    .header-Top > img:first-of-type{
-        position: absolute;
-        left: -60px;
-        top: 68px;
-
-    }
-
-    .header-Top > img:last-of-type{
-        position: absolute;
-        right: -60px;
-        top: 68px;
-    }
-
-    .Responsive-Mobile{
+/* 2. MOBILE (Dưới 768px) */
+@media screen and (max-width: 768px) {
+    .Container-Header-Desktop {
         display: none;
     }
-}
 
-@media screen and (max-width: 390px){
-
-    .Container-Header{
-            display: none;
-    }
-
-
-    .Mobile-Top{
+    .Responsive-Mobile {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        flex-direction: row;
-        max-width: 310px;
-        width: 100%;
-        background-color:#1A1A1A;
-        padding: 0 14px;
+        padding: 15px 20px;
         border-bottom: 1px dashed #262626;
     }
 
-    .Mobile-Top > img{
-        background-color:#1A1A1A;
-        width: 100%;
-        max-width: 100px;
-    }
-
-    .Mobile-Top > label{
-        font-size: 32px;
-        line-height: 150%;
-        background-color:#1A1A1A;
-        color: #FFFFFF;
+    .Button-Mobile {
+        background: #C2B4A3;
+        padding: 10px;
+        border-radius: 8px;
         cursor: pointer;
+        display: flex;
     }
 
-    .Responsive-Mobile{
+    /* Menu Side Drawer */
+    .Container-List-Menu-Mobile {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: -100%; /* Giấu bên phải */
+        width: 280px;
+        height: 100vh;
+        background-color: #1A1A1A;
+        z-index: 1000;
+        transition: 0.4s ease;
+        padding: 20px;
+    }
+
+    #Menu-Mobile:checked ~ .Container-List-Menu-Mobile {
+        right: 0;
+    }
+
+    #Menu-Mobile:checked ~ .Overlay {
+        display: block;
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.7);
+        z-index: 999;
+    }
+
+    .Mobile-Top {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        flex-direction: row;
-        max-width: 358px;
-        width: 100%;
-        background-color:#0F0F0F;
-
-        border-style: dashed;
-        border-bottom-width: 1px;
-        padding-top: 40px;
-        padding-bottom: 20px;
-        margin: 0 auto;
-
-        position: fixed;
-        left: 0;
-        right: 0;
-        z-index: 800;
-        top: 0;
-
+        margin-bottom: 30px;
     }
 
-    .Responsive-Mobile > label {
-      background: #C2B4A3;
-        max-width: 56px;
-        display: block;
-        border-radius: 10px;
-        gap: 10px;
-        padding: 14px;
+    .Times {
+        font-size: 35px;
+        color: white;
         cursor: pointer;
     }
 
-    .Button-Mobile{
-        background: #C2B4A3;
-    }
-
-    .Responsive-Mobile > label> img{
-        background: #C2B4A3;
-    }
-
-    /*============Menu Mobile============*/
-
-    .Container-List-Menu-Mobile{
+    .List-Menu-Mobile a {
         display: flex;
         align-items: center;
-        flex-direction: column;
-        background-color: #1A1A1A;
-        max-width: 310px;
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        z-index: 900;
-        border-radius: 12px 0 0 12px;
-        top:0;
-        right: -100%;
-
-        transition: all 0.35s ease-in-out;
-        padding: 20px 0;
-
-    }
-    .List-Menu-Mobile{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        background-color: #1A1A1A;
-        max-width: 310px;
-        width: 100%;
-    }
-
-    .List-Menu-Mobile > a{
-        display: block;
-        padding: 14px 24px;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 150%;
         color: white;
-        text-align: center;
-       margin-top: 10px;
-        background-color: #1A1A1A;
-        width: 100%;
-        max-width: 310px;
-    }
-
-    .List-Menu-Mobile > a:nth-of-type(3){
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
+        text-decoration: none;
+        padding: 15px 0;
+        font-weight: 600;
+        border-bottom: 1px solid #262626;
         gap: 10px;
     }
-
-    .List-Menu-Mobile > a:nth-of-type(3) > img{
-        background-color: #1A1A1A;
-    }
-    .List-Menu-Mobile > a:nth-of-type(3) > span {
-        background-color: #1A1A1A;
-    }
-    .Overlay{
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.7);
-        z-index: 900;
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.35s ease-in-out;
-    }
-
-    #Menu-Mobile:checked ~ .Overlay{
-        opacity: 1;
-        visibility: visible;
-    }
-
-    #Menu-Mobile:checked ~ .Container-List-Menu-Mobile{
-        right: 0;
-    }
-
 }

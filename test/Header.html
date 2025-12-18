@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<style>
+    /* RESET & CHUNG */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        background-color: #0F0F0F;
+    }
+
+    header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 999;
+        background-color: #0F0F0F;
+    }
+
+    /* DESKTOP LAYOUT */
+    .Container-Header-Desktop {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .header-Top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+        max-width: 1200px;
+        margin: 0 auto;
+        border-bottom: 1px dashed #262626;
+        position: relative;
+        padding: 25px 0;
+    }
+
+
+    .corner-line {
+        position: absolute;
+        bottom: -1px;
+        width: 60px;
+        height: 60px;
+        border-bottom: 1px dashed #262626;
+    }
+
+    .corner-line.left {
+        left: calc(-60px - 30px);
+        border-right: 1px dashed #262626;
+    }
+
+    .corner-line.right {
+        right: calc(-60px - 30px);
+        border-left: 1px dashed #262626;
+    }
+
+    .dot {
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        background-color:#0F0F0F;
+        z-index: 2;
+    }
+
+    .corner-line.left .dot {
+        right: 0;
+        bottom: 0;
+        transform: translate(50%, 50%);
+    }
+
+    .corner-line.right .dot {
+        left: 0;
+        bottom: 0;
+        transform: translate(-50%, 50%);
+    }
+    .Category, .Contact-Details {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .btn-home, .btn-products, .btn-contact, .btn-cart {
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 15px;
+        border-radius: 10px;
+        transition: 0.3s ease;
+        white-space: nowrap;
+    }
+
+    .btn-home {
+        color: #B3B3B2;
+        padding: 14px 24px;
+        border: 1px dashed #262626;
+    }
+
+    .btn-products, .btn-cart {
+        background-color: #1A1A1A;
+        color: #FFFFFF;
+        padding: 14px 24px;
+    }
+
+    .btn-cart { padding: 12px; }
+
+    .btn-contact {
+        background-color: #AE9B84;
+        color: #0F0F0F;
+        padding: 14px 28px;
+    }
+
+    .Responsive-Mobile, .Container-List-Menu-Mobile {
+        display: none;
+    }
+
+
+    /* 1. TABLET (Dưới 1200px) */
+    @media screen and (max-width: 992px) {
+        .header-Top {
+            max-width: 90%; /* Nới rộng khung để không bị vỡ */
+        }
+        /*.corner-line {*/
+        /*    display: none; !* Ẩn đường kẻ ở tablet để tránh rối mắt *!*/
+        /*}*/
+    }
+
+    /* 2. MOBILE (Dưới 768px) */
+    @media screen and (max-width: 768px) {
+        .Container-Header-Desktop {
+            display: none; /* Ẩn menu máy tính */
+        }
+
+        .Responsive-Mobile {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            border-bottom: 1px dashed #262626;
+        }
+
+        .Button-Mobile {
+            background: #C2B4A3;
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            display: flex;
+        }
+
+        /* Menu Side Drawer */
+        .Container-List-Menu-Mobile {
+            display: block;
+            position: fixed;
+            top: 0;
+            right: -100%; /* Giấu bên phải */
+            width: 280px;
+            height: 100vh;
+            background-color: #1A1A1A;
+            z-index: 1000;
+            transition: 0.4s ease;
+            padding: 20px;
+        }
+
+        #Menu-Mobile:checked ~ .Container-List-Menu-Mobile {
+            right: 0;
+        }
+
+        #Menu-Mobile:checked ~ .Overlay {
+            display: block;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.7);
+            z-index: 999;
+        }
+
+        .Mobile-Top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .Times {
+            font-size: 35px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .List-Menu-Mobile a {
+            display: flex;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            padding: 15px 0;
+            font-weight: 600;
+            border-bottom: 1px solid #262626;
+            gap: 10px;
+        }
+    }
+
+</style>
+
+<body>
+<header>
+
+    <div class="Container-Header-Desktop">
+        <div class="header-Top">
+            <div class="corner-line left">
+                <span class="dot"></span>
+            </div>
+
+            <nav class="Category">
+                <a href="#" class="btn-home">Home</a>
+                <a href="#" class="btn-products">Products</a>
+            </nav>
+
+            <div class="Product-Title">
+                <a href="#"><img src="/Products-Page/icons/Header/Logo.svg" alt="Logo"></a>
+            </div>
+
+            <div class="Contact-Details">
+                <a href="#" class="btn-cart">
+                    <img src="/Products-Page/icons/Header/Cart.svg" alt="Cart Icon" width="24">
+                </a>
+                <a href="#" class="btn-contact">Contact</a>
+            </div>
+
+            <div class="corner-line right">
+                <span class="dot"></span>
+            </div>
+        </div>
+    </div>
+
+    <input type="checkbox" id="Menu-Mobile" hidden>
+
+    <div class="Responsive-Mobile">
+        <a href="#"><img src="/Products-Page/icons/Header/Logo.svg" alt="Logo" width="100"></a>
+        <label for="Menu-Mobile" class="Button-Mobile">
+            <img src="/Products-Page/icons/Header/Button-Mobile.svg" alt="Menu" width="28">
+        </label>
+    </div>
+
+    <label for="Menu-Mobile" class="Overlay"></label>
+
+    <div class="Container-List-Menu-Mobile">
+        <div class="Mobile-Top">
+            <img src="/Products-Page/icons/Header/Logo.svg" alt="Logo" width="100">
+            <label for="Menu-Mobile" class="Times">&times;</label>
+        </div>
+        <nav class="List-Menu-Mobile">
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#" class="mobile-cart-link">
+                <img src="/Products-Page/icons/Header/Cart-Mobile.svg" alt="Cart"> <span>Cart</span>
+            </a>
+            <a href="#">Contact</a>
+        </nav>
+    </div>
+</header>
+
+</body>
+</html>

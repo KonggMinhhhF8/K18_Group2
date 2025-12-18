@@ -1,29 +1,32 @@
 *{
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-decoration: none;
-    Background-color: #0F0F0F;
+
     color: white;
     margin: 0;
     flex-shrink: 1;
 }
 html body{
     margin-top: 124.5px;
+    Background-color: #0F0F0F;
+    position: relative;
 }
 
 main{
-    max-width: 1596px;
-    width: 100%;
+    width: 85.77%;
     margin: 0 auto;
+    position: relative;
+    top: 100px;
 }
 
 /*--------------------------Tablet--------------------------*/
-@media screen and (max-width: 1440px){
+@media screen and (max-width: 992px){
     *{
         padding: 0;
         box-sizing: border-box;
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Roboto', sans-serif;
         text-decoration: none;
         Background-color: #0F0F0F;
         color: white;
@@ -37,11 +40,11 @@ main{
 
 }
 
-@media screen and (max-width: 390px){
+@media screen and (max-width: 768px){
     *{
         padding: 0;
         box-sizing: border-box;
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Roboto', sans-serif;
         text-decoration: none;
         Background-color: #0F0F0F;
         color: white;
