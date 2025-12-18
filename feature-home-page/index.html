@@ -1,41 +1,72 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>feature-home-page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style.Loom Premium Header</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/desktop.css">
 </head>
 <body>
 
+<header class="header">
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox">
 
-<header class="header container">
-    <div class="header-left">
-        <a href="#" class="nav-item active">Home</a>
-        <a href="#" class="nav-item products">Products</a>
-    </div>
+    <div class="header-outer">
+        <div class="decor-side decor-left">
+            <div class="line-h-short"></div>
+            <div class="line-v"></div>
+        </div>
 
-    <div class="header-center">
-        <a href="#">
-            <img class="logo" src="image/Logo.svg" alt="logo">
-        </a>
-    </div>
+        <nav class="nav-main">
+            <div class="nav-content">
+                <div class="nav-group-left">
+                    <a href="#" class="btn-item active"><b>Home</b></a>
+                    <a href="#" class="btn-item btn-dashed"><b>Products</b></a>
+                </div>
 
-    <div class="header-right">
-        <button class="cart-btn">
-            <img class="fa-cart-shopping" src="image/xeday.svg" alt="icon">
-        </button>
-        <a href="#" class="contact-btn">Contact</a>
+                <a href="#" class="logo">
+                    <img src="image/Logo.svg" alt="logo">
+                </a>
+
+                <div class="nav-group-right">
+                    <button class="btn-cart">
+                        <img src="image/xeday.svg" alt="cart">
+                    </button>
+                    <a href="#" class="btn-contact"><b>Contact</b></a>
+                </div>
+
+                <label for="menu-toggle" class="mobile-toggle">
+                    <img src="image/menu.svg" alt="menu">
+                </label>
+            </div>
+            <div class="nav-bottom-line"></div>
+        </nav>
+
+        <div class="decor-side decor-right">
+            <div class="line-v"></div>
+            <div class="line-h-short"></div>
+        </div>
+        <div class="mobile-dropdown">
+          <div class="mobile-dropdown-content">
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
     </div>
 </header>
 
-</body>
-</html>
 
 
-
+<main>
+    <section class="desktop-section container">
+        <img class="main1" src="image/main1.svg" alt="main1">
+    </section>
+</main>
 </body>
 </html>
