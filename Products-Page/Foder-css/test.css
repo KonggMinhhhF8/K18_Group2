@@ -1,166 +1,60 @@
-/* ================= RESET ================= */
-*{
-    margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap");
+
+*,
+*::before,
+*::after {
     padding: 0;
+    /*margin: 0 auto;*/
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;
 }
-
-body{
-    background-color: #0F0F0F;
-    color: #FFFFFF;
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
-
-/* ================= CONTAINER HEADER ================= */
-.Container-Header{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #0F0F0F;
-    z-index: 999;
-}
-
-/* ================= HEADER TOP ================= */
-.header-Top{
-    position: relative;
-    display: flex;
-    justify-content: space-between;
+.container {
+    display: inline-flex;
     align-items: center;
-
-    max-width: 1596px;
-    width: 100%;
-    margin: 0 auto;
-
-    padding: clamp(20px, 3vw, 30px) 0;
-    border-bottom: 1px dashed #262626;
+    /*width: 100%;*/
+    /*position: relative;*/
 }
-
-/* ================= DECOR IMAGES ================= */
-.header-Top > img{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: clamp(40px, 6vw, 80px);
-    height: auto;
-    pointer-events: none;
-}
-
-.header-Top > img:first-of-type{
-    left: clamp(-80px, -6vw, -30px);
-}
-
-.header-Top > img:last-of-type{
-    right: clamp(-80px, -6vw, -30px);
-}
-
-/* ================= CATEGORY ================= */
-.Category{
-    display: flex;
-    gap: 10px;
-}
-
-.Category a{
-    display: block;
-    text-align: center;
-    font-weight: 700;
-    line-height: 150%;
-}
-
-.Category a:first-of-type{
-    padding: clamp(12px, 2vw, 18px) clamp(18px, 2.5vw, 24px);
-    border-radius: 12px;
-    border: 1px dashed #262626;
-    color: #B3B3B2;
-    font-size: clamp(14px, 2vw, 18px);
-}
-
-.Category a:last-of-type{
-    padding: clamp(12px, 2vw, 18px) clamp(20px, 3vw, 30px);
-    border-radius: 12px;
-    background-color: #1A1A1A;
-    color: #FFFFFF;
-    font-size: clamp(14px, 2vw, 18px);
-}
-
-/* ================= PRODUCT TITLE ================= */
-.Product-Title img{
-    width: clamp(100px, 12vw, 151px);
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-/* ================= CONTACT ================= */
-.Contact-Details{
-    display: flex;
-    gap: 10px;
-}
-
-.Contact-Details a{
-    display: flex;
+/*
+    * NOTE:
+    * Khi thay đổi width / height của button,
+    * bắt buộc phải cập nhật viewBox của SVG
+    * theo đúng kích thước mới để viền không bị lệch.
+    *
+    * Ví dụ:
+    * - Button: width: 142px; height: 63px;
+    *   → SVG: viewBox="0 0 142 63"
+    *
+    * - Nếu tăng width lên 159px (height giữ nguyên):
+    *   → SVG: viewBox="0 0 159 63"
+    *
+    * Quy tắc:
+    * - viewBox.width  = button.width
+    * - viewBox.height = button.height
+*/
+.button {
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-weight: 700;
-    line-height: 150%;
-}
-
-.Contact-Details a:first-of-type{
-    width: clamp(44px, 4vw, 60px);
-    height: clamp(44px, 4vw, 60px);
+    gap: 4px;
+    width: 100%;
+    height: 100%;
+    padding: 14px 18px;
+    font-size: 16px;
+    color: #fff;
+    background: #1f1f1f;
     border-radius: 12px;
-    background-color: #1A1A1A;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 159 63' shape-rendering='geometricPrecision'%3E%3Crect x='0.5' y='0.5' width='158' height='62' rx='12' ry='12' fill='none' stroke='%23404040' stroke-width='1' stroke-dasharray='16%2c6' stroke-linecap='butt'/%3E%3Cpath d='M18 0.5 H12 A11.5 11.5 0 0 0 0.5 12 V18' fill='none' stroke='%23AE9B84' stroke-width='1.5' stroke-linecap='butt' stroke-linejoin='round'/%3E%3Cpath d='M141 0.5 H147 A11.5 11.5 0 0 1 158.5 12 V18' fill='none' stroke='%23AE9B84' stroke-width='1.5' stroke-linecap='butt' stroke-linejoin='round'/%3E%3Cpath d='M158.5 45 V51 A11.5 11.5 0 0 1 147 62.5 H141' fill='none' stroke='%23AE9B84' stroke-width='1.5' stroke-linecap='butt' stroke-linejoin='round'/%3E%3Cpath d='M18 62.5 H12 A11.5 11.5 0 0 1 0.5 51 V45' fill='none' stroke='%23AE9B84' stroke-width='1.5' stroke-linecap='butt' stroke-linejoin='round'/%3E%3C/svg%3E");
+    cursor: pointer;
+    position: relative;
 }
-
-.Contact-Details a:last-of-type{
-    padding: clamp(12px, 2vw, 18px) clamp(20px, 3vw, 30px);
-    border-radius: 12px;
-    background-color: #AE9B84;
-    color: #0F0F0F;
-    font-size: clamp(14px, 2vw, 18px);
-}
-
-/* ================= TABLET ================= */
-@media (max-width: 1440px){
-    .header-Top{
-        max-width: 1280px;
-    }
-}
-
-/* ================= MOBILE ================= */
-.Responsive-Mobile{
-    display: none;
-}
-
-@media (max-width: 390px){
-    .Container-Header{
-        display: none;
-    }
-
-    .Responsive-Mobile{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        max-width: 358px;
-        width: 100%;
-        margin: 0 auto;
-
-        padding: 40px 0 20px;
-        border-bottom: 1px dashed #262626;
-        background-color: #0F0F0F;
-
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 800;
-    }
-
-    .Responsive-Mobile label{
-        background: #C2B4A3;
-        padding: 14px;
-        border-radius: 10px;
-        cursor: pointer;
-    }
+.button-2 {
+    width: 142px;
+    height: 63px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 142 63' shape-rendering='geometricPrecision'%3E%3Crect x='0.5' y='0.5' width='141' height='62' rx='12' ry='12' fill='none' stroke='%23404040' stroke-width='1' stroke-dasharray='16%2c6' stroke-linecap='butt'/%3E%3Cpath d='M18 0.5 H12 A11.5 11.5 0 0 0 0.5 12 V18' fill='none' stroke='%23AE9B84' stroke-width='1.5' stroke-linecap='butt' stroke-linejoin='round'/%3E%3Cpath d='M124 0.5 H130 A11.5 11.5 0 0 1 141.5 12 V18' fill='none' stroke='%23AE9B84' stroke-width='1.5' stroke-linecap='butt' stroke-linejoin='round'/%3E%3Cpath d='M141.5 45 V51 A11.5 11.5 0 0 1 130 62.5 H124' fill='none' stroke='%23AE9B84' stroke-width='1.5' stroke-linecap='butt' stroke-linejoin='round'/%3E%3Cpath d='M18 62.5 H12 A11.5 11.5 0 0 1 0.5 51 V45' fill='none' stroke='%23AE9B84' stroke-width='1.5' stroke-linecap='butt' stroke-linejoin='round'/%3E%3C/svg%3E");
 }

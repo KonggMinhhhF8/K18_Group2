@@ -62,7 +62,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
+    /*flex-direction: row;*/
     width: 100%;
 }
 
@@ -94,11 +94,12 @@
 
 .Container-Fit-Price{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     gap: 10px;
     flex-direction: row;
-    width: 80.08%;
+    /*width: 80.08%;*/
+    flex-wrap: wrap;
 }
 
 .Fit{
@@ -107,6 +108,7 @@
     justify-content: flex-start;
     align-items: center;
     position: relative;
+
 }
 
 .Fit span{
@@ -166,5 +168,14 @@
     color: #CCCCCC;
 }
 
+.Dress-Collection-Type > a{
+    display: flex;
+    flex-shrink: 1;
+}
 
 
+@media screen and (max-width: 992px){
+    .Dress-Collection-List{
+        width: 50%;
+    }
+}
