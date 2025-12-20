@@ -10,9 +10,9 @@
     align-items: center;
     padding: 30px;
     flex-direction: row;
-    max-width: 1569px;
     gap: 20px;
     width: 100%;
+    border-bottom: 1px dashed #262626;
 }
 
 .Dress-Collection-Title h2{
@@ -20,25 +20,151 @@
     font-size: 30px;
     line-height: 100%;
     text-transform: uppercase;
+    text-align: left;
 }
 
-.View{
-    max-width: 142px;
-    width: 100%;
-    border-radius: 12px;
-    border-width: 2px 2px 2px 2px;
-    border-style: dashed;
-    gap: 4px;
-    padding: 18px 24px;
+.Dress-Collection-List{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    border-style: dashed;
+    padding: 30px;
+    border-width: 0 2px 0 0;
+    border-color: #262626;
+
+    width: 33.33%
 
 }
 
-.View > span{
+.Container-Title-Dress-Collection{
+    width: 100%;
+}
+.Dress-Collection-Container-List{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.Dress-Collection-List-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Dress-Collection-List-items > img{
+    width: 100%;
+    display: block;
+
+}
+
+.Dress-Collection-Type{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.Dress-Collection-Type > p{
+    border-radius: 100px;
+    border-width: 1px;
+    border-style: dashed;
+    gap: 10px;
+    padding: 10px 16px;
+    background-color: #1A1A1A;
+    border-color: #262626;
+    color: #B3B3B2;
+}
+
+.Dress-Collection-Type-Title{
+    margin-top: 20px;
+    gap:14px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start ;
+}
+
+.Dress-Collection-Type-Title > p{
+    font-weight: 700;
+    line-height: 150%;
+    font-family: "Roboto Mono", monospace;
+    font-size: 24px;
+}
+
+.Container-Fit-Price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    flex-direction: row;
+    width: 80.08%;
+}
+
+.Fit{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.Fit span{
+    flex-shrink: 1;
+}
+
+.Fit span:first-of-type{
+    color: #81807E;
+    font-family: "Roboto Mono" , monospace;
     font-weight: 700;
     font-size: 18px;
     line-height: 150%;
 }
+
+.Fit span:nth-of-type(2){
+    color: #4D4D4D;
+    font-size: 30px;
+    font-family: "Roboto Mono" , monospace;
+    font-weight: 700;
+}
+
+.Fit span:nth-of-type(3){
+    font-family: "Roboto Mono", monospace;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #CCCCCC;
+}
+
+.Price{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.Price span:first-of-type{
+    font-family: "Roboto Mono", monospace;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: #81807E;
+}
+
+.Price span:nth-of-type(2){
+    color: #4D4D4D;
+    font-size: 30px;
+    font-family: "Roboto Mono" , monospace;
+    font-weight: 700;
+}
+
+.Price span:nth-of-type(3){
+    font-family: "Roboto Mono", monospace;
+    font-weight: 700;
+    font-size: 20px;
+    color: #CCCCCC;
+}
+
+
 
