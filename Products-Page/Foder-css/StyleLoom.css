@@ -1,0 +1,198 @@
+.Container-StyleLoom{
+    width: 100%;
+    margin-top: 100px;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='12' ry='12' stroke='%23262626' stroke-width='2' stroke-dasharray='16%2c6' stroke-dashoffset='83' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+
+.StyleLoom{
+    gap: 30px;
+    border-bottom-width: 2px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+
+.StyleLoom-Title{
+    padding: 80px 0 80px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100% ;
+}
+
+.StyleLoom-Title > h2{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    text-transform: uppercase;
+
+}
+
+.StyleLoom-Title > p{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: #676665;
+}
+
+.StyleLoom > img{
+    display: block;
+    object-fit: cover;
+    /*max-width: 325px ;*/
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.StyleLoom-Container-List-One{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='0' ry='0' stroke='%23262626' stroke-width='2' stroke-dasharray='16%2c6' stroke-dashoffset='83' stroke-linecap='square'/%3e%3c/svg%3e");
+    position: relative;
+    clip-path: inset(  0 3px 0 3px);
+}
+
+.StyleLoom-Container-List-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 40px;
+    padding: 60px;
+    width: 33.33%;
+}
+
+.Customer{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.information-Customer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.Location > p:first-of-type{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.Location > p:nth-of-type(2){
+    font-family: "Roboto Mono" , monospace;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: #676665;
+}
+
+.Text-Customer > p{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: #81807E;
+
+}
+
+#Decor-One{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+#Decor-Three{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#Decor-Two{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#Decor-Four{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.StyleLoom-Container-List-Two{
+    display: flex;
+    flex-direction: row;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='0' ry='0' stroke='%23262626' stroke-width='2' stroke-dasharray='16%2c6' stroke-dashoffset='83' stroke-linecap='square'/%3e%3c/svg%3e");
+    position: relative;
+    flex-wrap: wrap;
+    clip-path: inset( 3px 0 0 0 );
+}
+.StyleLoom > img:nth-of-type(2){
+    display: none;
+}
+
+@media screen and (max-width: 992px) {
+
+    .StyleLoom-Title{
+        width: 100%;
+    }
+    .StyleLoom > img:first-of-type{
+        display: none;
+    }
+
+    .StyleLoom > img:nth-of-type(2){
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        /*max-width: 300px ;*/
+        object-fit: contain;
+        z-index: -1;
+        max-height: 100%;
+    }
+
+    .StyleLoom-Title > h2{
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 100%;
+        text-transform: uppercase;
+
+    }
+
+    .StyleLoom-Title > p{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        color: #676665;
+    }
+
+
+
+
+    .StyleLoom-Container-List-items{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 40px;
+        padding: 60px;
+        width: 50%;
+        flex-wrap: wrap;
+    }
+
+}

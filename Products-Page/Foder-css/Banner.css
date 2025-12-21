@@ -5,13 +5,14 @@
     width: 100%;
     margin: 0 auto;
     overflow: hidden;
-
-
-    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='12' ry='12' stroke='%23262626' stroke-width='2' stroke-dasharray='16%2c6' stroke-linecap='square'/%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='99.9%25' height='100%25' fill='none' rx='12' ry='12' stroke='%23262626' stroke-width='2' stroke-dasharray='16%2c6' stroke-linecap='square'/%3e%3c/svg%3e");
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
-    clip-path: inset(0 0 3px 0);
+    /* 2. CẮT BỎ CẠNH DƯỚI: Dùng clip-path để cắt xén */
+    /* Lệnh này giữ lại từ đỉnh (0%) xuống gần sát đáy (99%) và cắt bỏ phần còn lại */
+    clip-path: inset(0 0 7px 0);
+
 }
 
 .Container-Banner {
