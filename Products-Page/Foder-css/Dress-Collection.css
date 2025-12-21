@@ -1,7 +1,6 @@
 .Container-Dress-Collection{
     display: flex;
     flex-direction: column;
-    border: 1px dashed #262626;
 }
 
 .Dress-Collection-Title{
@@ -12,7 +11,13 @@
     flex-direction: row;
     gap: 20px;
     width: 100%;
-    border-bottom: 1px dashed #262626;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='0' ry='12' stroke='%23262626' stroke-width='2' stroke-dasharray='16%2c6' stroke-linecap='square'/%3e%3c/svg%3e");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    /* 2. CẮT BỎ CẠNH DƯỚI: Dùng clip-path để cắt xén */
+    /* Lệnh này giữ lại từ đỉnh (0%) xuống gần sát đáy (99%) và cắt bỏ phần còn lại */
+    clip-path: inset(0 0 3px 0);
 }
 
 .Dress-Collection-Title h2{
@@ -27,11 +32,7 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-    border-style: dashed;
     padding: 30px;
-    border-width: 0 2px 0 0;
-    border-color: #262626;
-
     width: 33.33%
 
 }
@@ -43,6 +44,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='0' ry='0' stroke='%23262626' stroke-width='2' stroke-dasharray='16%2c6' stroke-dashoffset='83' stroke-linecap='square'/%3e%3c/svg%3e");
 }
 .Dress-Collection-List-items{
     display: flex;
@@ -50,6 +52,7 @@
     align-items: center;
     flex-direction: column;
     gap: 20px;
+
 }
 
 .Dress-Collection-List-items > img{
@@ -68,12 +71,9 @@
 
 .Dress-Collection-Type > p{
     border-radius: 100px;
-    border-width: 1px;
-    border-style: dashed;
     gap: 10px;
     padding: 10px 16px;
     background-color: #1A1A1A;
-    border-color: #262626;
     color: #B3B3B2;
 }
 
@@ -172,10 +172,156 @@
     display: flex;
     flex-shrink: 1;
 }
+.Dress-Collection-Mobile-Container{
+    display: none;
+}
 
 
 @media screen and (max-width: 992px){
     .Dress-Collection-List{
         width: 50%;
     }
+    .Dress-Collection-Mobile-Container{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .Container-Dress-Collection{
+        display: none;
+
+    }
+    .Dress-Collection-Mobile-Container{
+        display: flex;
+        flex-direction: column;
+        width: 94%;
+        margin: 0 auto;
+        border-radius: 14px;
+    }
+    .Dress-Collection-Mobile{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .Dress-Collection-Mobile-Title{
+        width: 100%;
+        gap: 20px;
+        padding: 24px;
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='0' ry='0' stroke='%23262626' stroke-width='2' stroke-dasharray='16%2c6' stroke-dashoffset='83' stroke-linecap='square'/%3e%3c/svg%3e");
+
+    }
+
+    .Dress-Collection-Mobile-Title > h2{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 100%;
+        text-transform: uppercase;
+    }
+
+    .Dress-Collection-Mobile-List{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px 20px 30px 20px;
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='99.7%25' height='100%25' fill='none' rx='0' ry='12' stroke='%23262626' stroke-width='2' stroke-dasharray='16%2c6' stroke-linecap='square'/%3e%3c/svg%3e");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        clip-path: inset(3px 0 0 0);
+    }
+
+    .Dress-Collection-Mobile-img > img {
+        width: 100%;
+    }
+
+     .Dress-Collection-Mobile-Sub{
+        display: flex;
+         justify-content: space-between;
+         align-items: flex-start;
+         flex-direction: column;
+         gap: 10px;
+    }
+
+    .Dress-Collection-Mobile-Sub > span:first-of-type{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 150%;
+        border-radius: 100px;
+        padding: 8px 12px;
+        background-color: #1A1A1A;
+    }
+    .Dress-Collection-Mobile-Sub > p{
+        font-family: "Roboto Mono" , monospace;
+        font-weight: 700;
+        font-size: 18px;
+        /*line-height: 150%;*/
+    }
+    .Container-Fit-Price-Mobile{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .Fit-mobile{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .Price-mobile{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .Fit-mobile span:nth-of-type(1){
+        font-family: "Roboto Mono" , monospace;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 150%;
+        color: #81807E;
+    }
+    .Fit-mobile span:nth-of-type(2){
+        font-family: "Roboto Mono" , monospace;
+        font-weight: 700;
+        font-size: 25px;
+        color: #4D4D4D;
+    }
+
+    .Fit-mobile > span:nth-of-type(3){
+        font-family: "Roboto Mono" , monospace;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 150%;
+        color: #CCCCCC;
+    }
+
+    .Price-mobile span:nth-of-type(1){
+        font-family: "Roboto Mono" , monospace;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 150%;
+        color: #81807E;
+    }
+    .Price-mobile span:nth-of-type(2){
+        font-family: "Roboto Mono" , monospace;
+        font-weight: 700;
+        font-size: 25px;
+        color: #4D4D4D;
+    }
+    .Price-mobile > span:nth-of-type(3){
+        font-family: "Roboto Mono" , monospace;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 150%;
+        color: #CCCCCC;
+    }
+
+
+
 }

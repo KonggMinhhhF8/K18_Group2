@@ -4,10 +4,14 @@
     justify-content: space-between;
     width: 100%;
     margin: 0 auto;
-    border: 2px dashed #262626;
-    border-radius: 12px 12px 0 0;
     overflow: hidden;
-    border-bottom: none;
+
+
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='12' ry='12' stroke='%23262626' stroke-width='2' stroke-dasharray='16%2c6' stroke-linecap='square'/%3e%3c/svg%3e");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    clip-path: inset(0 0 3px 0);
 }
 
 .Container-Banner {
@@ -69,28 +73,44 @@
     margin-top: 50px;
 }
 
-.Products--List a{
-    display: block;
-    border-radius: 12px;
-    border: 1px dashed #262626;
+.Products--List > a:first-of-type,
+.Products--List > a:nth-of-type(2),
+.Products--List > a:last-of-type{
     padding: 18px 24px;
-    font-weight: 700;
     font-size: 18px;
     line-height: 150%;
-    text-align: center;
+    border-radius: 8px;
+    display: block;
+    border: 0;
+    color: #B3B3B2;
+
+
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect x='0' y='0' width='calc(100%25)' height='calc(100%25)' fill='none' rx='12' ry='12' stroke='%23262626' stroke-width='2' stroke-dasharray='5%2c5' stroke-linecap='square'/%3e%3c/svg%3e");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-weight: 700;
+    font-family: "Roboto Mono", monospace ;
 
 }
-
 .Products--List > a:nth-of-type(3){
+    font-weight: 700;
+    font-family: "Roboto Mono", monospace ;
+    padding: 18px 24px;
+    font-size: 18px;
+    line-height: 150%;
+    border-radius: 8px;
+    display: block;
+    flex-shrink: 10;
+    border: 0;
     background-color: #C7BAAA;
     color: #0F0F0F;
-    border: none;
 }
 
 .Products--List a:hover{
     background-color: #C7BAAA;
     color: #0F0F0F;
-    border: none;
+    background-image: none;
 }
 
 
@@ -111,10 +131,16 @@
         align-items: stretch;
         justify-content: space-between;
         width: 100%;
-        border: 2px dashed #262626;
         overflow: hidden;
-        border-bottom: none;
         border-radius: 12px 12px 0 0;
+
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='99.9%25' height='100%25' fill='none' rx='0' ry='12' stroke='%23262626' stroke-width='2' stroke-dasharray='16%2c6' stroke-linecap='square'/%3e%3c/svg%3e");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+
+        /* 2. CẮT BỎ CẠNH DƯỚI: Dùng clip-path để cắt xén */
+        /* Lệnh này giữ lại từ đỉnh (0%) xuống gần sát đáy (99%) và cắt bỏ phần còn lại */
+        clip-path: inset(0 0 3px 0);
     }
 
     .Container-Banner {
@@ -153,22 +179,37 @@
         width: 100%;
     }
 
-    .Products--List a{
-        border-radius: 12px;
-        border: 1px dashed #262626;
-        padding: 18px 24px;
-        gap: 10px;
+    .Products--List > a:first-of-type,
+    .Products--List > a:nth-of-type(2),
+    .Products--List > a:last-of-type{
+        width: 48%;
+        padding: 14px 24px;
+        font-size: 14px;
+        line-height: 150%;
+        border-radius: 8px;
+        display: block;
+        border: 0;
 
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 1.5;
-        text-align: center;
-        white-space: nowrap;
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect x='0' y='0' width='calc(100%25 - 1px)' height='calc(100%25 - 1px)' fill='none' rx='8' ry='8' stroke='%23262626' stroke-width='1.5' stroke-dasharray='5%2c5' stroke-linecap='square'/%3e%3c/svg%3e");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+
+    }
+    .Products--List > a:nth-of-type(3){
+        width: 48%;
+        padding: 14px 20px;
+        font-size: 14px;
+        line-height: 150%;
+        border-radius: 8px;
+        display: block;
+        flex-shrink: 10;
+        border: 0;
     }
 
     .Products--List a:hover{
         background-color: #C7BAAA;
         color: #0F0F0F;
+        background-image: none;
     }
 
     .Banner-Image {
@@ -203,15 +244,17 @@
 
     .Banner{
        width: 94%;
-       border-width: 1px;
-       border-style: dashed;
-       border-color: #262626;
-        border-bottom: none;
-       padding: 30px 20px;
-       gap: 30px;
-        display: flex;
+        /*background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M1.5 100%25 V10 A9 9 0 0 1 10.5 1 Hcalc(100%25 - 10.5px) A9 9 0 0 1 calc(100%25 - 1.5px) 10 V100%25' fill='none' stroke='%23262626' stroke-width='2' stroke-dasharray='16%2c6' stroke-linecap='square'/%3e%3c/svg%3e");        display: flex;*/
         flex-direction: column;
-        border-radius: 12px 12px 0 0;
+        border: none;
+        padding: 30px 20px;
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='99.7%25' height='100%25' fill='none' rx='0' ry='12' stroke='%23262626' stroke-width='2' stroke-dasharray='16%2c6' stroke-linecap='square'/%3e%3c/svg%3e");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+
+        /* 2. CẮT BỎ CẠNH DƯỚI: Dùng clip-path để cắt xén */
+        /* Lệnh này giữ lại từ đỉnh (0%) xuống gần sát đáy (99%) và cắt bỏ phần còn lại */
+        clip-path: inset(0 0 3px 0);
    }
 
     .Container-Banner{
@@ -258,10 +301,13 @@
         justify-content: center;
         align-items: center;
         flex-shrink: 10;
+        flex-wrap: nowrap;
 
 
     }
-    .Products--List > a{
+    .Products--List > a:first-of-type,
+    .Products--List > a:nth-of-type(2),
+    .Products--List > a:last-of-type{
         width: 48%;
         padding: 14px 20px;
         font-size: 14px;
@@ -269,5 +315,25 @@
         border-radius: 8px;
         display: block;
         flex-shrink: 10;
+        border: 0;
+
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect x='0' y='0' width='calc(100%25 - 1px)' height='calc(100%25 - 1px)' fill='none' rx='8' ry='8' stroke='%23262626' stroke-width='1' stroke-dasharray='5%2c5' stroke-linecap='square'/%3e%3c/svg%3e");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+
+    }
+    .Products--List > a:nth-of-type(3){
+        width: 48%;
+        padding: 14px 20px;
+        font-size: 14px;
+        line-height: 150%;
+        border-radius: 8px;
+        display: block;
+        flex-shrink: 10;
+        border: 0;
+    }
+
+    .Products--List > a:hover{
+        background-image: none;
     }
 }

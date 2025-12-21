@@ -17,9 +17,16 @@ header {
     align-items: center;
     width: 85.77%;
     margin: 0 auto;
-    border-bottom: 1px dashed #262626;
+    background-image: linear-gradient(to right, #262626 50%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    /* 10px = 5px nét gạch + 5px khoảng trắng */
+    background-size: 10px 1px;
+    background-repeat: repeat-x;
+
+    border: none;
+    border-radius: 0;
     position: relative;
-    padding: 25px 0;
+    padding: 30px 0;
 }
 
 
@@ -32,12 +39,12 @@ header {
 }
 
 .corner-line.left {
-    left: calc(-60px - 30px);
+    left: calc(-50px - 30px);
     border-right: 1px dashed #404040;
 }
 
 .corner-line.right {
-    right: calc(-60px - 30px);
+    right: calc(-50px - 30px);
     border-left: 1px dashed #404040;
 }
 
@@ -77,22 +84,36 @@ header {
 
 .btn-home {
     color: #B3B3B2;
-    padding: 14px 24px;
-    border: 1px dashed #262626;
+    padding: 18px 24px;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect x='0' y='0' width='calc(100%25 - 1px)' height='calc(100%25 - 1px)' fill='none' rx='12' ry='12' stroke='%23262626' stroke-width='2' stroke-dasharray='5%2c5' stroke-linecap='square'/%3e%3c/svg%3e");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 12px;
+    border: none;
+    font-weight: 700;
+    font-family: "Roboto Mono", monospace ;
 }
 
-.btn-products, .btn-cart {
+.btn-products {
     background-color: #1A1A1A;
     color: #FFFFFF;
-    padding: 14px 24px;
+    padding: 18px 30px;
+    font-weight: 700;
+    font-family: "Roboto Mono", monospace ;
 }
 
-.btn-cart { padding: 12px; }
+.btn-cart {
+    padding: 14px 18px;
+    background-color: #1A1A1A;}
 
 .btn-contact {
     background-color: #AE9B84;
     color: #0F0F0F;
-    padding: 14px 28px;
+    padding: 18px 30px;
+    font-size:18px;
+    font-weight: 700;
+    font-family: "Roboto Mono", monospace ;
 }
 
 .Responsive-Mobile, .Container-List-Menu-Mobile {
@@ -104,8 +125,127 @@ header {
 
 @media screen and (max-width: 992px) {
     .header-Top {
-        max-width: 90%;
+        max-width: 100%;
     }
+    header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 999;
+        background-color: #0F0F0F;
+    }
+
+    .Container-Header-Desktop {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .header-Top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 85.77%;
+        margin: 0 auto;
+        position: relative;
+        padding: 25px 0;
+        background-image: linear-gradient(to right, #262626 50%, rgba(255, 255, 255, 0) 0%);
+        background-position: bottom;
+        /* 10px = 5px nét gạch + 5px khoảng trắng */
+        background-size: 10px 1px;
+        background-repeat: repeat-x;
+
+        border: none;
+    }
+
+
+    .corner-line {
+        position: absolute;
+        bottom: 1px;
+        width: 46px;
+        height: 46px;
+        border-bottom: 1px dashed #404040;
+    }
+
+    .corner-line.left {
+        left: calc(-35px - 30px);
+        border-right: 1px dashed #404040;
+    }
+
+    .corner-line.right {
+        right: calc(-35px - 30px);
+        border-left: 1px dashed #404040;
+    }
+
+    .dot {
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        background-color:#0F0F0F;
+        z-index: 2;
+    }
+
+    .corner-line.left .dot {
+        right: 0;
+        bottom: 0;
+        transform: translate(50%, 50%);
+    }
+
+    .corner-line.right .dot {
+        left: 0;
+        bottom: 0;
+        transform: translate(-50%, 50%);
+    }
+    .Category, .Contact-Details {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .btn-home, .btn-products, .btn-contact, .btn-cart {
+        text-decoration: none;
+        font-size: 14px;
+        border-radius: 10px;
+        transition: 0.3s ease;
+        white-space: nowrap;
+        line-height: 150%;
+        font-weight: 700;
+        font-family: "Roboto Mono", monospace ;
+    }
+
+    .btn-home {
+        color: #B3B3B2;
+        padding: 14px 20px;
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect x='0.5' y='0.5' width='calc(100%25 - 2px)' height='calc(100%25 - 2px)' fill='none' rx='8' ry='8' stroke='%23262626' stroke-width='1' stroke-dasharray='5%2c5' stroke-linecap='square'/%3e%3c/svg%3e");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .btn-products {
+        background-color: #1A1A1A;
+        color: #FFFFFF;
+        padding: 14px 24px;
+    }
+
+    .btn-cart {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 14px; }
+
+    .btn-contact {
+        background-color: #AE9B84;
+        color: #0F0F0F;
+        padding: 14px 30px;
+    }
+
+    .Responsive-Mobile, .Container-List-Menu-Mobile {
+        display: none;
+    }
+    .Responsive-Mobile, .Container-List-Menu-Mobile {
+        display: none;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
