@@ -56,3 +56,9 @@ button {
     height: 63px;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 142 63' shape-rendering='geometricPrecision'%3E%3Crect x='0.5' y='0.5' width='141' height='62' rx='12' ry='12' fill='none' stroke='%23404040' stroke-width='1' stroke-dasharray='16%2c6' stroke-linecap='butt'/%3E%3Cpath d='M18 0.5 H12 A11.5 11.5 0 0 0 0.5 12 V18' fill='none' stroke='%23AE9B84' stroke-width='1.5' stroke-linecap='butt' stroke-linejoin='round'/%3E%3Cpath d='M124 0.5 H130 A11.5 11.5 0 0 1 141.5 12 V18' fill='none' stroke='%23AE9B84' stroke-width='1.5' stroke-linecap='butt' stroke-linejoin='round'/%3E%3Cpath d='M141.5 45 V51 A11.5 11.5 0 0 1 130 62.5 H124' fill='none' stroke='%23AE9B84' stroke-width='1.5' stroke-linecap='butt' stroke-linejoin='round'/%3E%3Cpath d='M18 62.5 H12 A11.5 11.5 0 0 1 0.5 51 V45' fill='none' stroke='%23AE9B84' stroke-width='1.5' stroke-linecap='butt' stroke-linejoin='round'/%3E%3C/svg%3E");
 }
+
+@media screen and (max-width: 992px) {
+    .button {
+        width: 100%;
+    }
+}

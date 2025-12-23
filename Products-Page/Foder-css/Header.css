@@ -201,7 +201,7 @@ header {
         align-items: center;
     }
 
-    .btn-home, .btn-products, .btn-contact, .btn-cart {
+    .btn-home , .btn-products .btn-contact, .btn-cart {
         text-decoration: none;
         font-size: 14px;
         border-radius: 10px;
@@ -219,25 +219,34 @@ header {
         background-size: 100% 100%;
         background-repeat: no-repeat;
         background-position: center;
+        font-size: 14px;
     }
 
     .btn-products {
         background-color: #1A1A1A;
         color: #FFFFFF;
         padding: 14px 24px;
+        font-size: 14px;
     }
 
     .btn-cart {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 12px 14px; }
+        padding: 12px 14px;
+        font-size: 0;
+    }
 
     .btn-contact {
         background-color: #AE9B84;
         color: #0F0F0F;
         padding: 14px 30px;
+        font-size:14px;
+
     }
+
+
+
 
     .Responsive-Mobile, .Container-List-Menu-Mobile {
         display: none;

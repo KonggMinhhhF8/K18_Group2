@@ -60,12 +60,11 @@ main{
     }
     body{
         Background-color: #0F0F0F;
-        margin-top: 10%;
     }
     main{
 
         margin: 0 auto;
-        width: 100%;
+        width: 94%;
     }
 
 }

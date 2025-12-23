@@ -152,6 +152,8 @@
 
     .StyleLoom-Title{
         width: 100%;
+        padding: 60px 0 60px 60px;
+        gap: 20px;
     }
     .StyleLoom > img:first-of-type{
         display: none;
@@ -209,8 +211,12 @@
         flex-direction: column;
         gap: 30px;
         padding: 60px;
-        width: 50%;
-        flex-wrap: wrap;
+        width: 33.33%;
+        flex-wrap: nowrap;
+    }
+
+    .Dress-Collection-List{
+        width: 33.33%;
     }
 
     .Text-Customer > p{
@@ -226,8 +232,9 @@
 
 @media screen and (max-width: 768px){
     .Container-StyleLoom{
-        width: 94%;
-        margin: 0 auto;
+        width: 100%;
+        margin-top: 50px;
+
     }
 
     .StyleLoom-Container-List-Two,

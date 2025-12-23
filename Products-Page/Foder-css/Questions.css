@@ -1,0 +1,142 @@
+.Container-Questions{
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='12' ry='12' stroke='%23262626' stroke-width='2' stroke-dasharray='16%2c6' stroke-dashoffset='83' stroke-linecap='square'/%3e%3c/svg%3e");
+    margin-top: 100px;
+    position: relative;
+}
+
+.Container-Question-Title{
+    padding: 80px 0 80px 80px;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 100% ;
+}
+
+.Question-Title{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.Question-Title > h2{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+.Question-Title > p{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: #676665;
+}
+
+.Category-Question{
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+}
+
+.Category-Question > a{
+    display: flex;
+    flex-shrink: 1;
+    padding: 18px 24px;
+    font-family: "Roboto Mono" , monospace;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: #B3B3B2;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='12' ry='12' stroke='%23262626' stroke-width='2' stroke-dasharray='16%2c6' stroke-dashoffset='83' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+
+.Category-Question > a:nth-of-type(3){
+    background-color: #C2B4A3;
+    color: #0F0F0F;
+    background-image: none;
+    border-radius: 12px;
+}
+
+.Category-Question > a:hover{
+    color: #0F0F0F;
+    background-color: #C2B4A3;
+    background-image: none;
+    border-radius: 12px;
+}
+
+.Container-Question-Title > img{
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    max-width: 30%;
+    z-index: -1;
+    display: block;
+    border-radius: 0 12px 0 0;
+}
+
+.Container-Questions-List{
+    clip-path: inset(0 3px 3px 3px);
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='0' ry='0' stroke='%23262626' stroke-width='2' stroke-dasharray='16%2c6' stroke-dashoffset='83' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+
+.Questions-List{
+    display: flex;
+    flex-direction: row;
+}
+
+.Questions-List-Title{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 60px;
+    width: 50%;
+}
+
+.Border-Right-Bottom{
+    clip-path: inset(3px 0 0 3px);
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='0' ry='0' stroke='%23262626' stroke-width='2' stroke-dasharray='16%2c6' stroke-dashoffset='83' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+
+.Border-Bottom{
+    clip-path: inset(3px 3px 0 3px);
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='0' ry='0' stroke='%23262626' stroke-width='2' stroke-dasharray='16%2c6' stroke-dashoffset='83' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+
+.Questions-List-Title > p:first-of-type{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+
+}
+
+.Questions-List-Title > p:nth-of-type(2){
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: #81807E;
+}
+
+
+@media screen and (max-width: 992px){
+        .Container-Question-Title{
+            padding: 60px 0 60px 60px;
+            gap: 40px;
+            display: flex;
+            flex-direction: column;
+            width: 100% ;
+        }
+    .Question-Title{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .Question-Title > h2{
+        font-size: 38px;
+
+    }
+
+
+}
