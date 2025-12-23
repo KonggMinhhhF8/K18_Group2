@@ -130,6 +130,9 @@
     top: 0;
 }
 
+.View-All{
+    display: none;
+}
 #Decor-Four{
     position: absolute;
     right: 0;
@@ -228,13 +231,16 @@
 
     }
 
+    .View-All{
+        display: none;
+    }
+
 }
 
 @media screen and (max-width: 768px){
     .Container-StyleLoom{
         width: 100%;
         margin-top: 50px;
-
     }
 
     .StyleLoom-Container-List-Two,
@@ -269,10 +275,11 @@
     .StyleLoom-Container-List-items{
         width: 100%;
         background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='1000%25' fill='none' rx='0' ry='0' stroke='%23262626' stroke-width='2' stroke-dasharray='16%2c6' stroke-dashoffset='83' stroke-linecap='square'/%3e%3c/svg%3e");
-        clip-path: inset( 0 5px 0 0 );
+        clip-path: inset( 0 0 0 0 );
+        padding: 30px;
 
     }
-    #View-All{
+    .View-All{
         gap: 10px;
         padding: 30px 20px;
         width: 100%;
@@ -291,6 +298,10 @@
         text-align: center;
         color: #B3B3B2;
 
+    }
+
+    .Border-Right{
+       background-image: none;
     }
 
     .Location > p:nth-of-type(1){

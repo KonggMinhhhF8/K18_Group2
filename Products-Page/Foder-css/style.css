@@ -12,6 +12,7 @@ body{
     margin-top: 101px;
     Background-color: #0F0F0F;
     position: relative;
+    overflow-x: hidden;
 }
 
 main{
