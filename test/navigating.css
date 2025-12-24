@@ -1,0 +1,85 @@
+.container-navigating{
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='12' ry='12' stroke='%23262626' stroke-width='2' stroke-dasharray='16%2c6' stroke-dashoffset='83' stroke-linecap='square'/%3e%3c/svg%3e");
+    margin-top: 100px;
+    position: relative;
+}
+
+.navigating-top{
+    gap: 30px;
+    border-bottom-width: 2px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    background-image: linear-gradient(to right, #262626 16px, transparent 16px);
+    background-position: bottom;
+    background-size: 22px 2px;
+    background-repeat: repeat-x;
+    border: none;
+    border-radius: 0;
+
+}
+
+.navigating-top-title{
+    padding: 80px 0 80px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100% ;
+}
+
+.navigating-top-title > h2{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+.navigating-top-title > p{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: #676665;
+}
+
+.navigating-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Chia đều 4 cột */
+    width: 100%;
+    background-color: #0F0F0F;
+    background-image: linear-gradient(to right, #262626 16px, transparent 16px);
+    background-position: bottom;
+    background-size: 22px 2px;
+    background-repeat: repeat-x;
+    border: none;
+    border-radius: 0;
+}
+
+.step-box {
+    padding: 50px;
+    width: 100%;
+    gap: 30px;
+}
+
+.step-num {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #676665;
+    margin-bottom: 30px;
+}
+
+.step-title{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.step-desc{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #81807E;
+}

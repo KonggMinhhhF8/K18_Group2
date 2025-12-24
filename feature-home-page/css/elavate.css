@@ -1,0 +1,149 @@
+.Container-Elevate{
+    margin: 100px auto 0 auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+    position: relative;
+    width: 99%;
+
+    background-color: #C2B4A3;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Elevate-Title{
+    padding: 100px 0 100px 100px;
+    gap:16px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    max-width: 75%;
+}
+
+.Elevate-Title > h2{
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #0F0F0F;
+
+}
+
+.Elevate-Title > p{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: #1F1F1F;
+}
+
+.Elevate-Button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    padding: 18px 24px;
+    background-color: #1F1F1F;
+    border-radius: 12px;
+    position: relative;
+    z-index: 1;
+    right: 10%;
+
+
+}
+
+.Elevate-Button > p{
+    color:#FFFFFF;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    white-space: nowrap;
+
+
+}
+
+.Elevate-Button-Mobile{
+    display: none;
+}
+
+#image-Elevate{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    max-width: 40%;
+}
+
+
+@media screen and (max-width: 992px){
+
+    .Container-Elevate{
+        gap:100px;
+        border-radius: 16px;
+        margin: 80px auto 0 auto;
+    }
+
+    .Elevate-Title{
+        padding: 60px 0 60px 60px;
+        width: 80%;
+    }
+
+    .Elevate-Button-Mobile{
+        display: none;
+    }
+
+    .Elevate-Title > h2{
+        font-size: 48px;
+        width: 100%;
+    }
+
+    .Elevate-Title > p{
+        font-size: 16px;
+    }
+
+    .Elevate-Button > p{
+        font-size: 14px;
+    }
+
+    .Elevate-Button{
+        padding: 14px 20px;
+        border-radius: 8px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .Container-Elevate{
+        width: 100%;
+        gap: 30px;
+        margin: 50px auto 0 auto;
+    }
+    #image-Elevate{
+        display: none;
+    }
+    .Elevate-Button{
+        display: none;
+    }
+
+    .Elevate-Title{
+        padding: 50px 30px;
+        gap: 20px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .Elevate-Button-Mobile{
+        position: relative;
+        bottom: 0;
+        left:0;
+        right: 0;
+        border-radius: 8px;
+        padding: 14px 20px;
+        gap: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #1F1F1F;
+        margin-top: 10px;
+    }
+
+}
