@@ -15,13 +15,14 @@
     clear: both;
     width: 100vw;
     gap: 50px;
+    top: 40px;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 100px 162px;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
     clip-path: inset(3px 3px 0 3px);
-    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='99.8%25' fill='none' rx='0' ry='0' stroke='%23262626' stroke-width='2' stroke-dasharray='16%2c6' stroke-dashoffset='83' stroke-linecap='square'/%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='99.5%25' fill='none' rx='0' ry='0' stroke='%23262626' stroke-width='2' stroke-dasharray='16%2c6' stroke-dashoffset='83' stroke-linecap='square'/%3e%3c/svg%3e");
 
 }
 
@@ -62,8 +63,8 @@
 .newsletter-container h3 {
     color: white;
     font-family: sans-serif;
-    font-size: 24px;
-    margin-bottom: 25px;
+    font-size: 22px;
+    margin-bottom: 30px;
 }
 
 .email-input-wrapper {
@@ -72,7 +73,7 @@
     align-items: center;
     background: #1a1a1a;
     border-radius: 15px;
-    padding: 15px 25px;
+    padding: 18px 24px;
 }
 
 .email-input-wrapper input {
@@ -126,12 +127,13 @@
     width: 100vw;
     justify-content: space-between;
     gap: 100px;
+    top: 40px;
     padding: 80px 162px;
     flex-wrap: wrap;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
     clip-path: inset(3px 3px 0 3px);
-    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='0' ry='0' stroke='%23262626' stroke-width='2' stroke-dasharray='16%2c6' stroke-dashoffset='83' stroke-linecap='square'/%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='99.5%25' fill='none' rx='0' ry='0' stroke='%23262626' stroke-width='2' stroke-dasharray='16%2c6' stroke-dashoffset='83' stroke-linecap='square'/%3e%3c/svg%3e");
 
 }
 
@@ -140,9 +142,8 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    gap: 80px;
+    gap: 50px;
     flex-wrap: wrap;
-    width:80%;
 }
 
 .Home-Footer{
@@ -183,10 +184,13 @@
         padding: 60px 80px;
         clip-path: inset(3px 3px 0 3px);
         background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='99.6%25' fill='none' rx='0' ry='0' stroke='%23262626' stroke-width='2' stroke-dasharray='16%2c6' stroke-dashoffset='83' stroke-linecap='square'/%3e%3c/svg%3e");
+        top: 0;
+        gap: 50px;
     }
 
     .Container-Social-Media{
         padding: 80px;
+        top: 0;
 
     }
 
@@ -219,13 +223,18 @@
         padding: 14px 14px 12px 14px;
         border-radius: 8px;
     }
+
+    .newsletter-container h3{
+        font-size: 18px;
+        margin-bottom: 24px;
+    }
+
 }
 
 @media screen and (max-width: 768px){
 
     .Social-Media-Logo{
-      width: 94%;
-        margin: 0 auto;
+      width: 100%;
     }
 
     .Social-Media-Logo > a > img{
@@ -234,7 +243,53 @@
 
     .Container-Social-Media{
         padding: 50px 16px;
+        gap: 30px;
+        top: -50px;
     }
 
-    .Social-Media-icon
+    .Container-Media-Bottom{
+        top: -50px;
+        padding: 40px 16px;
+        gap: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+    }
+    .Home-Footer > p{
+        font-size: 16px;
+    }
+
+    .Home-Footer > ul > li{
+        font-size: 14px;
+    }
+
+    .newsletter-container{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .email-input-wrapper{
+        padding: 18px 20px;
+        width: 100%;
+        max-width: 100%;
+        border-radius: 7px;
+    }
+    .newsletter-container h3{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .Container-Home-Footer{
+        gap: 30px;
+    }
+    .Home-Footer{
+        gap: 10px;
+    }
+
+    .Social-Media-icon > a{
+        padding: 12px 12px 10px 12px;
+        border-radius: 8px;
+    }
+
 }

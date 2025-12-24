@@ -6,7 +6,7 @@ footer{
     padding: 50px 162px;
     width: 100%;
     position: relative;
-    top: 100px;
+    top: 140px;
     flex-wrap: wrap;
 
 }
@@ -43,6 +43,7 @@ footer > p{
 @media (max-width: 992px){
     footer{
         padding: 40px 80px;
+        top: 80px;
     }
 
     footer > p{
@@ -65,7 +66,12 @@ footer > p{
     footer{
         padding: 30px 16px;
         gap: 20px;
+        top: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
     }
+
 }
 
 

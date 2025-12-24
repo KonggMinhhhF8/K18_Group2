@@ -1,0 +1,145 @@
+.wrapper {
+    width: auto;
+    max-width: 300px; /* Giới hạn chiều rộng tối đa cho đẹp */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* --- 1. Style cho Newsletter --- */
+.newsletter-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: white;
+}
+
+.input-group {
+    position: relative;
+    width: 100%;
+    background-color: #161616; /* Màu nền input tối hơn xíu */
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+
+.input-group input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-family: var(--font-mono); /* Font giống máy đánh chữ */
+    font-size: 16px;
+    padding: 16px 20px;
+}
+
+.input-group input::placeholder {
+    color: #555; /* Màu placeholder tối */
+}
+
+.submit-arrow {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.submit-arrow:hover {
+    transform: translateX(5px);
+}
+
+/* --- 2. Style cho Nút Shop Now (CÔNG NGHỆ MULTIPLE BACKGROUND) --- */
+.button-container {
+    width: 100%;
+}
+
+/* --- Cập nhật lại class .shop-btn --- */
+.shop-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    max-width: none;
+    width: 100%;
+    min-width: 160px;
+    height: 64px;
+
+    background-color: #1f1f1f;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 12px; /* Bo góc CSS khớp với SVG */
+
+    /* LOGIC 1PX PIXEL PERFECT:
+       - stroke-width='1'
+       - Tọa độ bắt đầu/kết thúc tại 0.5 (cho mép trái/trên) và 23.5 (cho mép phải/dưới).
+       - Bán kính cong (Radius) = 11.5 (Để khớp từ 12 về 0.5).
+    */
+    background-image:
+        /* 1. Góc Trái Trên (Top-Left) */
+            url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M18 0.5 H12 A11.5 11.5 0 0 0 0.5 12 V18' fill='none' stroke='%23AE9B84' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"),
+
+                /* 2. Góc Phải Trên (Top-Right) */
+            url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M6 0.5 H12 A11.5 11.5 0 0 1 23.5 12 V18' fill='none' stroke='%23AE9B84' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"),
+
+                /* 3. Góc Phải Dưới (Bottom-Right) */
+            url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M23.5 6 V12 A11.5 11.5 0 0 1 12 23.5 H6' fill='none' stroke='%23AE9B84' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"),
+
+                /* 4. Góc Trái Dưới (Bottom-Left) */
+            url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M0.5 6 V12 A11.5 11.5 0 0 0 12 23.5 H18' fill='none' stroke='%23AE9B84' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"),
+
+                /* 5. Viền Nét Đứt */
+            url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25'%3E%3Crect x='0.5' y='0.5' width='calc(100%25 - 1px)' height='calc(100%25 - 1px)' rx='12' ry='12' fill='none' stroke='%23404040' stroke-width='1' stroke-dasharray='16,6'/%3E%3C/svg%3E");
+
+    background-position:
+            top left,
+            top right,
+            bottom right,
+            bottom left,
+            center;
+
+    background-repeat: no-repeat;
+    /* Kích thước 24px giúp các đoạn thẳng của góc vàng hiển thị đủ độ dài 18px như mẫu */
+    background-size: 24px 24px, 24px 24px, 24px 24px, 24px 24px, 100% 100%;
+
+    transition: all 0.3s ease;
+}
+
+.shop-btn:hover {
+    filter: brightness(1.2);
+    transform: translateY(-2px);
+}
+
+/* Hiệu ứng Hover */
+.shop-btn:hover {
+    filter: brightness(1.2); /* Sáng lên chút khi hover */
+    transform: translateY(-2px);
+}
+
+
+
+@media screen and (max-width: 992px) {
+
+
+    .shop-btn{
+        font-size: 14px;
+        height: 50px;
+        min-width: 128px;
+    }
+
+    .wrapper {
+        max-width: 128px;
+        width: 40%;
+    }
+}
