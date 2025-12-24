@@ -7,6 +7,7 @@ footer{
     width: 100%;
     position: relative;
     top: 100px;
+    flex-wrap: wrap;
 
 }
 
@@ -39,6 +40,32 @@ footer > p{
     line-height: 150%;
 }
 
+@media (max-width: 992px){
+    footer{
+        padding: 40px 80px;
+    }
 
+    footer > p{
+        font-size: 14px;
+    }
+
+    .Footer > p{
+        font-size: 14px;
+    }
+    .Footer > p:first-of-type::after{
+        content: "|";
+        padding: 0 10px;
+        color: #81807E;
+    }
+
+
+}
+
+@media (max-width: 768px){
+    footer{
+        padding: 30px 16px;
+        gap: 20px;
+    }
+}
 
 
