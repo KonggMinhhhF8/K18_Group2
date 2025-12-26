@@ -57,7 +57,7 @@
 .newsletter-container {
     text-align: left;
     width: 100%;
-    max-width: 500px; /* Độ rộng form */
+    max-width: 500px;
 }
 
 .newsletter-container h3 {
@@ -100,7 +100,7 @@
 .arrow-submit {
     background: transparent;
     border: none;
-    color: #c2b4a3; /* Màu đồng của mũi tên */
+    color: #c2b4a3;
     cursor: pointer;
     padding: 0;
     display: flex;

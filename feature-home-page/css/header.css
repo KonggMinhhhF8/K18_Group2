@@ -19,7 +19,6 @@ header {
     margin: 0 auto;
     background-image: linear-gradient(to right, #262626 50%, rgba(255, 255, 255, 0) 0%);
     background-position: bottom;
-    /* 10px = 5px nét gạch + 5px khoảng trắng */
     background-size: 10px 1px;
     background-repeat: repeat-x;
 
@@ -150,7 +149,6 @@ header {
         padding: 25px 0;
         background-image: linear-gradient(to right, #262626 50%, rgba(255, 255, 255, 0) 0%);
         background-position: bottom;
-        /* 10px = 5px nét gạch + 5px khoảng trắng */
         background-size: 10px 1px;
         background-repeat: repeat-x;
 
@@ -245,9 +243,6 @@ header {
 
     }
 
-
-
-
     .Responsive-Mobile, .Container-List-Menu-Mobile {
         display: none;
     }
@@ -278,9 +273,6 @@ header {
         background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='99.9%25' height='100%25' fill='none' rx='0' ry='0' stroke='%23262626' stroke-width='2' stroke-dasharray='16%2c6' stroke-linecap='square'/%3e%3c/svg%3e");
         background-size: 100% 100%;
         background-repeat: no-repeat;
-
-        /* 2. CẮT BỎ CẠNH DƯỚI: Dùng clip-path để cắt xén */
-        /* Lệnh này giữ lại từ đỉnh (0%) xuống gần sát đáy (99%) và cắt bỏ phần còn lại */
         clip-path: inset(3px 3px 0 3px);
 
     }

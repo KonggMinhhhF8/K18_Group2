@@ -41,16 +41,6 @@
     color: #676665;
 }
 
-/*.StyleLoom > img{*/
-/*    display: block;*/
-/*    object-fit: cover;*/
-/*    !*max-width: 325px ;*!*/
-/*    position: absolute;*/
-/*    top: 0;*/
-/*    bottom: 0;*/
-/*    right: 0;*/
-/*    z-index: -1;*/
-/*}*/
 
 .StyleLoom-Container-List-One{
     display: flex;

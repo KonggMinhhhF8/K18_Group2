@@ -1,7 +1,11 @@
 .container-navigating{
-    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='12' ry='12' stroke='%23262626' stroke-width='2' stroke-dasharray='16%2c6' stroke-dashoffset='83' stroke-linecap='square'/%3e%3c/svg%3e");
+    width: 100%;
     margin-top: 100px;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='99.9%25' height='100%25' fill='none' rx='12' ry='12' stroke='%23262626' stroke-width='2' stroke-dasharray='16%2c6' stroke-dashoffset='83' stroke-linecap='square'/%3e%3c/svg%3e");
     position: relative;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
 }
 
 .navigating-top{
@@ -45,7 +49,7 @@
 
 .navigating-box {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Chia đều 4 cột */
+    grid-template-columns: repeat(4, 1fr);
     width: 100%;
     background-color: #0F0F0F;
     background-image: linear-gradient(to right, #262626 16px, transparent 16px);
@@ -82,4 +86,56 @@
     font-size: 18px;
     line-height: 150%;
     color: #81807E;
+}
+
+
+@media screen and (max-width: 992px) {
+    .navigating-top-title {
+        padding: 60px 0 60px 40px;
+    }
+
+    .navigating-top-title > h2 {
+        font-size: 36px;
+    }
+
+    .navigating-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .step-box {
+        padding: 40px;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .navigating-top img {
+        display: none;
+    }
+
+    .navigating-top-title {
+        padding: 40px 20px;
+    }
+
+    .navigating-box {
+        grid-template-columns: 1fr;
+        background-image: none !important;
+    }
+
+
+    .step-box {
+        background-image: linear-gradient(to right, #262626 16px, transparent 16px) !important;
+        background-position: top !important;
+        background-size: 22px 2px !important;
+        background-repeat: repeat-x !important;
+        border-right: none !important;
+
+        padding: 40px 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .step-box:first-child {
+        background-image: none !important;
+    }
 }

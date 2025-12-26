@@ -8,7 +8,7 @@
     flex-direction: column;
 }
 
-#View-All{
+.View-All{
     display: none;
 }
 
@@ -117,3 +117,102 @@
 
 }
 
+@media screen and (max-width: 768px) {
+    .container-crafting {
+        margin-top: 60px;
+    }
+
+    .crafting-title {
+        padding: 40px 20px;
+        background-image: linear-gradient(to right, #262626 16px, transparent 16px);
+        background-size: 22px 1px;
+        background-position: left bottom;
+        background-repeat: repeat-x;
+    }
+
+    .crafting-title h2 {
+        font-size: 28px;
+        margin-bottom: 16px;
+    }
+
+    .crafting-title p {
+        font-size: 14px;
+    }
+
+
+    .crafting-board-List-One {
+        flex-direction: column;
+        background-image: none;
+        clip-path: none;
+    }
+
+
+    .crafting-board-List-items {
+        width: 100%;
+        padding: 32px 20px;
+        gap: 24px;
+        background-image: none;
+    }
+
+
+    .crafting-board-List-items:not(:last-child) {
+        background-image: linear-gradient(
+                to right,
+                #262626 16px,
+                transparent 16px
+        );
+        background-size: 22px 1px;
+        background-position: left bottom;
+        background-repeat: repeat-x;
+    }
+
+
+    .crafting-board-Customer {
+        position: relative;
+    }
+
+    .crafting-board-Customer > img {
+        max-width: 80px;
+        top: -32px;
+        right: -18px;
+        opacity: 0.4;
+    }
+
+    .crafting-board-Location > img {
+        margin-bottom: 0;
+        width: 36px;
+        height: 36px;
+    }
+
+
+    .crafting-board-Text-Customer h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .crafting-board-Text-Customer p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .View-All {
+        gap: 10px;
+        padding: 30px 20px;
+        width: 100%;
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='1000%25' fill='none' rx='0' ry='0' stroke='%23262626' stroke-width='2' stroke-dasharray='16%2c6' stroke-dashoffset='83' stroke-linecap='square'/%3e%3c/svg%3e");
+        clip-path: inset( 0 5px 0 0 );
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .View-All > span{
+        font-family: "Roboto Mono" , monospace;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        color: #B3B3B2;
+
+    }
+}

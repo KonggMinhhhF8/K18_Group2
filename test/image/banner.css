@@ -1,4 +1,4 @@
-.Banner-elavate {
+.Banner {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -7,7 +7,7 @@
     overflow: hidden;
 }
 
-.Container-Banner-elavate {
+.Container-Banner {
     flex: 3;
     padding: 80px 0 80px 80px;
     min-width: 0;
@@ -231,7 +231,7 @@
         flex-direction: column;
         border: none;
         padding: 30px 20px;
-        margin-top: 50px;
+        margin-top: -40px;
 
     }
 

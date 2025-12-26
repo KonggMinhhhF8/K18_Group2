@@ -1,13 +1,13 @@
-.Banner-elavate {
+.Banner {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    margin: 0 auto;
     overflow: hidden;
+    margin-top: 100px;
 }
 
-.Container-Banner-elavate {
+.Container-Banner {
     flex: 3;
     padding: 80px 0 80px 80px;
     min-width: 0;
@@ -110,9 +110,6 @@
 .Banner-Title-Mobile{
     display: none;
 }
-
-
-/*------------------------Tablet--------------------------*/
 
 
 @media screen and (max-width: 992px){
@@ -231,7 +228,7 @@
         flex-direction: column;
         border: none;
         padding: 30px 20px;
-        margin-top: 50px;
+        margin-top: -40px;
 
     }
 
