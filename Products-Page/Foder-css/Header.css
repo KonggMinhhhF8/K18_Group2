@@ -11,22 +11,39 @@ header {
     padding: 0 20px;
 }
 
+/*.header-Top {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    width: 85.77%;*/
+/*    margin: 0 auto;*/
+/*    background-image: linear-gradient(to right, #262626 50%, rgba(255, 255, 255, 0) 0%);*/
+/*    background-position: bottom;*/
+/*    background-size: 10px 1px;*/
+/*    background-repeat: repeat-x;*/
+
+/*    border: none;*/
+/*    border-radius: 0;*/
+/*    position: relative;*/
+/*    padding: 30px 0;*/
+/*}*/
+
 .header-Top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 85.77%;
     margin: 0 auto;
-    background-image: linear-gradient(to right, #262626 50%, rgba(255, 255, 255, 0) 0%);
+    padding: 30px 0;
+
+    background-image: linear-gradient(to right, #262626 50%, transparent 50%);
     background-position: bottom;
-    /* 10px = 5px nét gạch + 5px khoảng trắng */
-    background-size: 10px 1px;
+
+    background-size: 15px 2px;
     background-repeat: repeat-x;
 
     border: none;
-    border-radius: 0;
     position: relative;
-    padding: 30px 0;
 }
 
 
@@ -52,6 +69,7 @@ header {
     position: absolute;
     width: 50%;
     height: 50%;
+
     background-color:#0F0F0F;
     z-index: 2;
 }
@@ -85,6 +103,7 @@ header {
 .btn-home {
     color: #B3B3B2;
     padding: 18px 24px;
+    font-size: 18px;
     background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect x='0' y='0' width='calc(100%25 - 1px)' height='calc(100%25 - 1px)' fill='none' rx='12' ry='12' stroke='%23262626' stroke-width='2' stroke-dasharray='5%2c5' stroke-linecap='square'/%3e%3c/svg%3e");
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -99,6 +118,7 @@ header {
     background-color: #1A1A1A;
     color: #FFFFFF;
     padding: 18px 30px;
+    font-size: 18px;
     font-weight: 700;
     font-family: "Roboto Mono", monospace ;
 }
@@ -331,9 +351,7 @@ header {
     .Mobile-Top,
     .Mobile-Top > img,
     .Times,
-    .List-Menu-Mobile a,
-    .mobile-cart-link > span,
-    .mobile-cart-link > img{
+    .List-Menu-Mobile a{
         background-color: #1A1A1A;
     }
 
@@ -371,5 +389,11 @@ header {
         font-weight: 600;
         border-bottom: 1px solid #262626;
         gap: 10px;
+    }
+
+    .Mobile-Actions{
+        display: flex;
+        align-items: center;
+        gap: 15px;
     }
 }

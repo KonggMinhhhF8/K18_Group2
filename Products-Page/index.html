@@ -57,9 +57,14 @@
 
     <div class="Responsive-Mobile">
         <a href="#"><img src="/Products-Page/icons/Header/Logo.svg" alt="Logo"></a>
-        <label for="Menu-Mobile" class="Button-Mobile">
-            <img src="/Products-Page/icons/Header/Button-Mobile.svg" alt="Menu">
-        </label>
+        <div class="Mobile-Actions">
+            <a href="#" class="mobile-cart-link">
+                <img src="/Products-Page/icons/Header/Cart-Mobile.svg" alt="Cart">
+            </a>
+            <label for="Menu-Mobile" class="Button-Mobile">
+                <img src="/Products-Page/icons/Header/Button-Mobile.svg" alt="Menu">
+            </label>
+        </div>
     </div>
 
     <label for="Menu-Mobile" class="Overlay"></label>
@@ -72,9 +77,6 @@
         <nav class="List-Menu-Mobile">
             <a href="#">Home</a>
             <a href="#">Products</a>
-            <a href="#" class="mobile-cart-link">
-                <img src="/Products-Page/icons/Header/Cart-Mobile.svg" alt="Cart"> <span>Cart</span>
-            </a>
             <a href="#">Contact</a>
         </nav>
     </div>
@@ -105,9 +107,7 @@
                     <a href="#">Kids</a>
                 </div><!--End Products--List-->
             </div><!--End Container Banner-->
-            <div class="Banner-Image">
-                <img src="icons/Banner/image-Banner.svg" alt="Banner Image">
-            </div>
+            <img src="icons/Banner/image-Banner.svg" alt="Banner Image">
         </div><!--End Banner-->
 
         <!--    ==========Dress Collection============-->
@@ -259,7 +259,7 @@
 
                     <div class="button-container">
                         <a href="#" class="shop-btn">
-                            <span>Shop Now</span>
+                            <span>View All</span>
                             <img src="icons/Dress-Collection/Arrow-Top.svg" alt="Arrow">
                             <!--                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>-->
                         </a>
@@ -398,7 +398,7 @@
 
                     <div class="button-container">
                         <a href="#" class="shop-btn">
-                            <span>Shop Now</span>
+                            <span>View All</span>
                             <img src="icons/Dress-Collection/Arrow-Top.svg" alt="Arrow">
                             <!--                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>-->
                         </a>
@@ -408,7 +408,6 @@
 
             </div> <!--End Dress Collection Title-->
 
-            <!--        <div class="Border-Bottom">-->
             <div class="Dress-Collection-Container-List ">
 
                 <div class="Dress-Collection-List Border-Right">
@@ -720,7 +719,7 @@
 
                 </div> <!--End StyleLomm-Container-List-items-->
 
-                <div class="StyleLoom-Container-List-items Border-Right">
+                <div class="StyleLoom-Container-List-items Border-Top Border-Right">
                     <div class="Customer">
                         <div class="information-Customer">
                             <img src="images/StyleLoom/Avatar-Customer/Rajesh-Patel.svg" alt="Customer 1">
@@ -887,7 +886,7 @@
 
         <div class="Container-Questions-List">
             <div class="Questions-List">
-                <div class="Questions-List-Title Border-Right-Bottom">
+                <div class="Questions-List-Title Border-Right-Bottom-Questions">
                     <p>How can I place an order on StyleLoom?</p>
                     <p>Ordering is easy! Simply browse our website, add items to your cart, and proceed to checkout.
                         Follow the prompts to enter your details and complete your purchase.</p>
@@ -901,7 +900,7 @@
             </div>
 
             <div class="Questions-List">
-                <div class="Questions-List-Title Border-Right-Bottom">
+                <div class="Questions-List-Title Border-Right-Bottom-Questions">
                     <p>What payment methods do you accept?</p>
                     <p>We accept a variety of payment methods, including credit/debit cards, net banking, and select
                         digital wallets. Choose the option that suits you best during checkout.</p>
@@ -1066,8 +1065,8 @@
     <p>© 2024 StyleLoom. All rights reserved.</p>
 
     <div class="Footer">
-        <p>Terms & Conditions</p>
-        <p>Privacy Policy</p>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
 
     </div>
 </footer>
