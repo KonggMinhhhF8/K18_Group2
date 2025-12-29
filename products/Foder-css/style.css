@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+
+    color: white;
+    margin: 0;
+    flex-shrink: 1;
+}
+body{
+    margin-top: 101px;
+    Background-color: #0F0F0F;
+    position: relative;
+    overflow-x: hidden;
+}
+
+main{
+    width: 83.95%;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+}
+
+/*--------------------------Tablet--------------------------*/
+@media screen and (max-width: 992px){
+    *{
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+        text-decoration: none;
+
+        color: white;
+        margin: 0;
+        border: 0;
+        flex-shrink: 1;
+    }
+    html body{
+        padding-top: 0;
+        Background-color: #0F0F0F;
+    }
+    main{
+        margin: 0 auto;
+        position: relative;
+        top: 80px;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    *{
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+        text-decoration: none;
+
+        color: white;
+        margin: 0;
+        border: 0;
+        flex-shrink: 1;
+    }
+    body{
+        Background-color: #0F0F0F;
+    }
+    main{
+
+        margin: 0 auto;
+        width: 94%;
+    }
+
+}

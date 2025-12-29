@@ -1,0 +1,375 @@
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+    background-color: #0F0F0F;
+}
+
+.Container-Header-Desktop {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.header-Top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85.77%;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, #262626 50%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    /* 10px = 5px nét gạch + 5px khoảng trắng */
+    background-size: 10px 1px;
+    background-repeat: repeat-x;
+
+    border: none;
+    border-radius: 0;
+    position: relative;
+    padding: 30px 0;
+}
+
+
+.corner-line {
+    position: absolute;
+    bottom: -1px;
+    width: 60px;
+    height: 60px;
+    border-bottom: 1px dashed #404040;
+}
+
+.corner-line.left {
+    left: calc(-50px - 30px);
+    border-right: 1px dashed #404040;
+}
+
+.corner-line.right {
+    right: calc(-50px - 30px);
+    border-left: 1px dashed #404040;
+}
+
+.dot {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color:#0F0F0F;
+    z-index: 2;
+}
+
+.corner-line.left .dot {
+    right: 0;
+    bottom: 0;
+    transform: translate(50%, 50%);
+}
+
+.corner-line.right .dot {
+    left: 0;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+}
+.Category, .Contact-Details {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.btn-home, .btn-products, .btn-contact, .btn-cart {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    white-space: nowrap;
+}
+
+.btn-home {
+    color: #B3B3B2;
+    padding: 18px 24px;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect x='0' y='0' width='calc(100%25 - 1px)' height='calc(100%25 - 1px)' fill='none' rx='12' ry='12' stroke='%23262626' stroke-width='2' stroke-dasharray='5%2c5' stroke-linecap='square'/%3e%3c/svg%3e");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 12px;
+    border: none;
+    font-weight: 700;
+    font-family: "Roboto Mono", monospace ;
+}
+
+.btn-products {
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+    padding: 18px 30px;
+    font-weight: 700;
+    font-family: "Roboto Mono", monospace ;
+}
+
+.btn-cart {
+    padding: 14px 18px;
+    background-color: #1A1A1A;}
+
+.btn-contact {
+    background-color: #AE9B84;
+    color: #0F0F0F;
+    padding: 18px 30px;
+    font-size:18px;
+    font-weight: 700;
+    font-family: "Roboto Mono", monospace ;
+}
+
+.Responsive-Mobile, .Container-List-Menu-Mobile {
+    display: none;
+}
+.Responsive-Mobile, .Container-List-Menu-Mobile {
+    display: none;
+}
+
+@media screen and (max-width: 992px) {
+    .header-Top {
+        max-width: 100%;
+    }
+    header {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 999;
+        background-color: #0F0F0F;
+    }
+
+    .Container-Header-Desktop {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .header-Top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 85.77%;
+        margin: 0 auto;
+        position: relative;
+        padding: 25px 0;
+        background-image: linear-gradient(to right, #262626 50%, rgba(255, 255, 255, 0) 0%);
+        background-position: bottom;
+        /* 10px = 5px nét gạch + 5px khoảng trắng */
+        background-size: 10px 1px;
+        background-repeat: repeat-x;
+
+        border: none;
+    }
+
+
+    .corner-line {
+        position: absolute;
+        bottom: 1px;
+        width: 46px;
+        height: 46px;
+        border-bottom: 1px dashed #404040;
+    }
+
+    .corner-line.left {
+        left: calc(-35px - 30px);
+        border-right: 1px dashed #404040;
+    }
+
+    .corner-line.right {
+        right: calc(-35px - 30px);
+        border-left: 1px dashed #404040;
+    }
+
+    .dot {
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        background-color:#0F0F0F;
+        z-index: 2;
+    }
+
+    .corner-line.left .dot {
+        right: 0;
+        bottom: 0;
+        transform: translate(50%, 50%);
+    }
+
+    .corner-line.right .dot {
+        left: 0;
+        bottom: 0;
+        transform: translate(-50%, 50%);
+    }
+    .Category, .Contact-Details {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .btn-home , .btn-products .btn-contact, .btn-cart {
+        text-decoration: none;
+        font-size: 14px;
+        border-radius: 10px;
+        transition: 0.3s ease;
+        white-space: nowrap;
+        line-height: 150%;
+        font-weight: 700;
+        font-family: "Roboto Mono", monospace ;
+    }
+
+    .btn-home {
+        color: #B3B3B2;
+        padding: 14px 20px;
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect x='0.5' y='0.5' width='calc(100%25 - 2px)' height='calc(100%25 - 2px)' fill='none' rx='8' ry='8' stroke='%23262626' stroke-width='1' stroke-dasharray='5%2c5' stroke-linecap='square'/%3e%3c/svg%3e");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-size: 14px;
+    }
+
+    .btn-products {
+        background-color: #1A1A1A;
+        color: #FFFFFF;
+        padding: 14px 24px;
+        font-size: 14px;
+    }
+
+    .btn-cart {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 14px;
+        font-size: 0;
+    }
+
+    .btn-contact {
+        background-color: #AE9B84;
+        color: #0F0F0F;
+        padding: 14px 30px;
+        font-size:14px;
+
+    }
+
+
+
+
+    .Responsive-Mobile, .Container-List-Menu-Mobile {
+        display: none;
+    }
+    .Responsive-Mobile, .Container-List-Menu-Mobile {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .Container-Header-Desktop {
+        display: none;
+    }
+
+    header {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 10px;
+        position: fixed;
+        top: -5px;
+        left: 0;
+        right: 0;
+
+
+    }
+    .Responsive-Mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 97%;
+        margin: 0 auto;
+        padding: 40px 0 20px 0;
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='99.9%25' height='100%25' fill='none' rx='0' ry='0' stroke='%23262626' stroke-width='2' stroke-dasharray='16%2c6' stroke-linecap='square'/%3e%3c/svg%3e");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+
+        /* 2. CẮT BỎ CẠNH DƯỚI: Dùng clip-path để cắt xén */
+        /* Lệnh này giữ lại từ đỉnh (0%) xuống gần sát đáy (99%) và cắt bỏ phần còn lại */
+        clip-path: inset(3px 3px 0 3px);
+
+    }
+
+    .Responsive-Mobile > a{
+        width: 27.5%;
+    }
+    .Responsive-Mobile > a > img{
+        width: 100%;
+        margin-left: 3px;
+        min-width: 129px;
+    }
+
+    .Button-Mobile {
+        background: #C2B4A3;
+        padding: 14px;
+        border-radius: 10px;
+        cursor: pointer;
+        display: flex;
+        margin-right:2px;
+    }
+
+    .Button-Mobile > img{
+        background-color: #C2B4A3;
+        width:21px;
+        height: 14px;
+
+    }
+
+    .Container-List-Menu-Mobile {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: -1000%;
+        width: 280px;
+        height: 100vh;
+        background-color: #1A1A1A;
+        z-index: 1000;
+        transition: 0.4s ease;
+        padding: 20px;
+    }
+
+    .Mobile-Top,
+    .Mobile-Top > img,
+    .Times,
+    .List-Menu-Mobile a,
+    .mobile-cart-link > span,
+    .mobile-cart-link > img{
+        background-color: #1A1A1A;
+    }
+
+    #Menu-Mobile:checked ~ .Container-List-Menu-Mobile {
+        right: 0;
+    }
+
+    #Menu-Mobile:checked ~ .Overlay {
+        display: block;
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.7);
+        z-index: 999;
+    }
+
+    .Mobile-Top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .Times {
+        font-size: 35px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .List-Menu-Mobile a {
+        display: flex;
+        align-items: center;
+        color: white;
+        text-decoration: none;
+        padding: 15px 0;
+        font-weight: 600;
+        border-bottom: 1px solid #262626;
+        gap: 10px;
+    }
+}

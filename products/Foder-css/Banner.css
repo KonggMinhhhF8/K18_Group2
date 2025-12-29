@@ -1,0 +1,317 @@
+.Banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.Container-Banner {
+    flex: 3;
+    padding: 80px 0 80px 80px;
+    min-width: 0;
+    width: 70%;
+}
+
+.Banner-Image {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 30%;
+}
+
+.Banner-Image img {
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    /*max-height: 450px;*/
+    object-fit: contain;
+    display: block;
+}
+
+.Banner-Title{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.Banner-Title > h1{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+
+.Banner-Title > p{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: #676665;
+
+}
+
+.Products--List{
+    max-width: 432px;
+    max-height: 63px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 14px;
+    margin-top: 50px;
+}
+
+.Products--List > a:first-of-type,
+.Products--List > a:nth-of-type(2),
+.Products--List > a:last-of-type{
+    padding: 18px 24px;
+    font-size: 18px;
+    line-height: 150%;
+    border-radius: 8px;
+    display: block;
+    border: 0;
+    color: #B3B3B2;
+
+
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect x='0' y='0' width='calc(100%25)' height='calc(100%25)' fill='none' rx='12' ry='12' stroke='%23262626' stroke-width='2' stroke-dasharray='5%2c5' stroke-linecap='square'/%3e%3c/svg%3e");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-weight: 700;
+    font-family: "Roboto Mono", monospace ;
+
+}
+.Products--List > a:nth-of-type(3){
+    font-weight: 700;
+    font-family: "Roboto Mono", monospace ;
+    padding: 18px 24px;
+    font-size: 18px;
+    line-height: 150%;
+    border-radius: 8px;
+    display: block;
+    flex-shrink: 10;
+    border: 0;
+    background-color: #C7BAAA;
+    color: #0F0F0F;
+}
+
+.Products--List a:hover{
+    background-color: #C7BAAA;
+    color: #0F0F0F;
+    background-image: none;
+}
+
+
+.Banner-Title-Mobile{
+    display: none;
+}
+
+
+/*------------------------Tablet--------------------------*/
+
+
+@media screen and (max-width: 992px){
+
+
+
+    .Banner {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 12px 12px 0 0;
+
+    }
+
+    .Container-Banner {
+        flex: 7;
+        padding: 60px 0 60px 60px;
+        min-width: 0;
+    }
+
+    .Banner-Title{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        max-width: 970px;
+        width: 100%;
+    }
+
+    .Banner-Title > h1{
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 100%;
+        text-transform: uppercase;
+    }
+
+    .Banner-Title > p{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        color: #676665;
+    }
+
+    .Products--List{
+        display: flex;
+        gap: 10px;
+        margin-top: 40px;
+        max-width: 367px;
+        width: 100%;
+    }
+
+    .Products--List > a:first-of-type,
+    .Products--List > a:nth-of-type(2),
+    .Products--List > a:last-of-type{
+        width: 48%;
+        padding: 14px 24px;
+        font-size: 14px;
+        line-height: 150%;
+        border-radius: 8px;
+        display: block;
+        border: 0;
+
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect x='0' y='0' width='calc(100%25 - 1px)' height='calc(100%25 - 1px)' fill='none' rx='8' ry='8' stroke='%23262626' stroke-width='1.5' stroke-dasharray='5%2c5' stroke-linecap='square'/%3e%3c/svg%3e");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+
+    }
+    .Products--List > a:nth-of-type(3){
+        width: 48%;
+        padding: 14px 20px;
+        font-size: 14px;
+        line-height: 150%;
+        border-radius: 8px;
+        display: block;
+        flex-shrink: 10;
+        border: 0;
+    }
+
+    .Products--List a:hover{
+        background-color: #C7BAAA;
+        color: #0F0F0F;
+        background-image: none;
+    }
+
+    .Banner-Image {
+        flex: 3;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        min-width: 0;
+
+        /*align-self: stretch;*/
+    }
+
+    .Banner-Image img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+
+    .Banner-Title{
+        display: none;
+    }
+
+    .Banner-Image{
+        display: none;
+    }
+
+    .Banner{
+       width: 100%;
+        flex-direction: column;
+        border: none;
+        padding: 30px 20px;
+        margin-top: -40px;
+
+   }
+
+    .Container-Banner{
+        padding: 0;
+        border-radius: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+
+    }
+    .Banner-Title-Mobile{
+        width: 100%;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .Banner-Title-Mobile > h1{
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 100%;
+        text-transform: uppercase;
+        text-align: left;
+        width: 100%;
+    }
+    .Banner-Title-Mobile > p{
+        width: 100%;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 150%;
+        color: #676665;
+        text-align: left;
+    }
+
+    .Products--List{
+        width: 100%;
+        margin-top: 30px;
+        gap: 4%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 10;
+        flex-wrap: nowrap;
+
+
+    }
+    .Products--List > a:first-of-type,
+    .Products--List > a:nth-of-type(2),
+    .Products--List > a:last-of-type{
+        width: 48%;
+        padding: 14px 20px;
+        font-size: 14px;
+        line-height: 150%;
+        border-radius: 8px;
+        display: block;
+        flex-shrink: 10;
+        border: 0;
+
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect x='0' y='0' width='calc(100%25 - 1px)' height='calc(100%25 - 1px)' fill='none' rx='8' ry='8' stroke='%23262626' stroke-width='1' stroke-dasharray='5%2c5' stroke-linecap='square'/%3e%3c/svg%3e");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+
+    }
+    .Products--List > a:nth-of-type(3){
+        width: 48%;
+        padding: 14px 20px;
+        font-size: 14px;
+        line-height: 150%;
+        border-radius: 8px;
+        display: block;
+        flex-shrink: 10;
+        border: 0;
+    }
+
+    .Products--List > a:hover{
+        background-image: none;
+    }
+}
