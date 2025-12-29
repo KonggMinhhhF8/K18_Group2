@@ -10,8 +10,6 @@
 
 .border{
     background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='99.9%25' height='100%25' fill='none' rx='25' ry='25' stroke='%23262626' stroke-width='2' stroke-dasharray='16%2c6' stroke-dashoffset='83' stroke-linecap='square'/%3e%3c/svg%3e");
-    width: 100%;
-    margin: 0 auto;
 }
 
 .Container-Banner {
@@ -265,7 +263,7 @@
         border-radius: 0;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         flex-direction: column;
         width: 100%;
         max-width: 100%;
@@ -327,7 +325,7 @@
         flex-shrink: 10;
         border: 0;
 
-        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect x='0' y='0' width='calc(100%25 - 1px)' height='calc(100%25 - 1px)' fill='none' rx='12' ry='12' stroke='%23262626' stroke-width='1' stroke-dasharray='5%2c5' stroke-linecap='square'/%3e%3c/svg%3e");
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='99%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect x='1' y='1' width='calc(100%25 - 2px)' height='calc(100%25 - 2px)' fill='none' rx='8' ry='8' stroke='%23262626' stroke-width='1' stroke-dasharray='5%2c5' stroke-linecap='square'/%3e%3c/svg%3e");
         background-size: 100% 100%;
         background-repeat: no-repeat;
 
@@ -348,7 +346,7 @@
     }
 
     .border{
-        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='12' ry='12' stroke='%23262626' stroke-width='2' stroke-dasharray='16%2c6' stroke-dashoffset='83' stroke-linecap='square'/%3e%3c/svg%3e");
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='101%25' height='100%25' fill='none' rx='12' ry='12' stroke='%23262626' stroke-width='2' stroke-dasharray='16%2c6' stroke-dashoffset='83' stroke-linecap='square'/%3e%3c/svg%3e");
     }
 
     .Banner> img{

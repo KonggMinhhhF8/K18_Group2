@@ -72,6 +72,10 @@ footer > a {
         justify-content: center;
     }
 
+    .Footer > a{
+        font-size: 14px;
+    }
+
 }
 
 

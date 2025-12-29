@@ -79,7 +79,8 @@
 @media screen and (max-width: 768px){
     .stock-ticker{
         padding: 30px 0;
-        gap: 12px;
+        gap: 8px;
+        top:0;
         margin-top: 50px;
     }
 

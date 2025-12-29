@@ -8,19 +8,19 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>Products Page</title>
-    <link rel="stylesheet" href="/Products-Page/Foder-css/style.css">
-    <link rel="stylesheet" href="/Products-Page/Foder-css/Header.css">
-    <link rel="stylesheet" href="/Products-Page/Foder-css/Banner.css">
-    <link rel="stylesheet" href="/Products-Page/Foder-css/Dress-Collection.css">
-    <link rel="stylesheet" href="/Products-Page/Foder-css/Action.css">
-    <link rel="stylesheet" href="/Products-Page/Foder-css/Action-Mobile.css">
-    <link rel="stylesheet" href="/Products-Page/Foder-css/StyleLoom.css">
-    <link rel="stylesheet" href="/Products-Page/Foder-css/Questions.css">
-    <link rel="stylesheet" href="/Products-Page/Foder-css/Elevate.css">
-    <link rel="stylesheet" href="/Products-Page/Foder-css/Text-scrolling.css">
-    <link rel="stylesheet" href="/Products-Page/Foder-css/Social-Media.css">
-    <link rel="stylesheet" href="/Products-Page/Foder-css/Footer.css">
-    <link rel="stylesheet" href="/Products-Page/Foder-css/Shop-Now.css">
+    <link rel="stylesheet" href="/products/Foder-css/style.css">
+    <link rel="stylesheet" href="/products/Foder-css/Header.css">
+    <link rel="stylesheet" href="/products/Foder-css/Banner.css">
+    <link rel="stylesheet" href="/products/Foder-css/Dress-Collection.css">
+    <link rel="stylesheet" href="/products/Foder-css/Action.css">
+    <link rel="stylesheet" href="/products/Foder-css/Action-Mobile.css">
+    <link rel="stylesheet" href="/products/Foder-css/StyleLoom.css">
+    <link rel="stylesheet" href="/products/Foder-css/Questions.css">
+    <link rel="stylesheet" href="/products/Foder-css/Elevate.css">
+    <link rel="stylesheet" href="/products/Foder-css/Text-scrolling.css">
+    <link rel="stylesheet" href="/products/Foder-css/Social-Media.css">
+    <link rel="stylesheet" href="/products/Foder-css/Footer.css">
+    <link rel="stylesheet" href="/products/Foder-css/Shop-Now.css">
 </head>
 <body>
 <header>
@@ -37,12 +37,12 @@
             </nav>
 
             <div class="Product-Title">
-                <a href="#"><img src="/Products-Page/icons/Header/Logo.svg" alt="Logo"></a>
+                <a href="#"><img src="/products/icons/Header/Logo.svg" alt="Logo"></a>
             </div>
 
             <div class="Contact-Details">
                 <a href="#" class="btn-cart">
-                    <img src="/Products-Page/icons/Header/Cart.svg" alt="Cart Icon" width="24">
+                    <img src="/products/icons/Header/Cart.svg" alt="Cart Icon" width="24">
                 </a>
                 <a href="#" class="btn-contact">Contact</a>
             </div>
@@ -56,25 +56,28 @@
     <input type="checkbox" id="Menu-Mobile" hidden>
 
     <div class="Responsive-Mobile">
-        <a href="#"><img src="/Products-Page/icons/Header/Logo.svg" alt="Logo"></a>
-        <label for="Menu-Mobile" class="Button-Mobile">
-            <img src="/Products-Page/icons/Header/Button-Mobile.svg" alt="Menu">
-        </label>
+        <a href="#"><img src="/products/icons/Header/Logo.svg" alt="Logo"></a>
+        <div class="Contact-Details-Mobile">
+            <a href="#" class="mobile-cart-link">
+                <img src="/products/icons/Header/Cart-Mobile.svg" alt="Cart">
+            </a>
+            <label for="Menu-Mobile" class="Button-Mobile">
+                <img src="/products/icons/Header/Button-Mobile.svg" alt="Menu">
+            </label>
+        </div>
+
     </div>
 
     <label for="Menu-Mobile" class="Overlay"></label>
 
     <div class="Container-List-Menu-Mobile">
         <div class="Mobile-Top">
-            <img src="/Products-Page/icons/Header/Logo.svg" alt="Logo" width="100">
+            <img src="/products/icons/Header/Logo.svg" alt="Logo" width="100">
             <label for="Menu-Mobile" class="Times">&times;</label>
         </div>
         <nav class="List-Menu-Mobile">
             <a href="#">Home</a>
             <a href="#">Products</a>
-            <a href="#" class="mobile-cart-link">
-                <img src="/Products-Page/icons/Header/Cart-Mobile.svg" alt="Cart"> <span>Cart</span>
-            </a>
             <a href="#">Contact</a>
         </nav>
     </div>
@@ -130,7 +133,7 @@
 
             <div class="Dress-Collection-Container-List">
 
-                <div class="Dress-Collection-List Border-Right">
+                <div class="Dress-Collection-List  Border-Right-Dress-Collection Border-Bottom-Dress-Collection">
                     <div class="Dress-Collection-List-items">
                         <img src="images/Dress__Collection/Timeless.svg" alt="Dress Collection 1">
                         <div class="Container-Title-Dress-Collection">
@@ -169,7 +172,7 @@
 
                 <!--    =========================Dress-Collection-List 2===============-->
 
-                <div class="Dress-Collection-List Border-Right">
+                <div class="Dress-Collection-List  Border-Right-Dress-Collection Border-Bottom-Dress-Collection">
                     <div class="Dress-Collection-List-items">
                         <img src="images/Dress__Collection/Floral%20.svg" alt="Dress Collection 2">
                         <div class="Container-Title-Dress-Collection">
@@ -259,7 +262,7 @@
 
                     <div class="button-container">
                         <a href="#" class="shop-btn">
-                            <span>Shop Now</span>
+                            <span>View All</span>
                             <img src="icons/Dress-Collection/Arrow-Top.svg" alt="Arrow">
                             <!--                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>-->
                         </a>
@@ -271,7 +274,7 @@
 
             <div class="Dress-Collection-Container-List">
 
-                <div class="Dress-Collection-List Border-Right">
+                <div class="Dress-Collection-List Border-Right-Dress-Collection Border-Bottom-Dress-Collection">
                     <div class="Dress-Collection-List-items">
                         <img src="images/Dress__Collection/Accessories/Wide.svg" alt="Dress Collection 1">
                         <div class="Container-Title-Dress-Collection">
@@ -310,7 +313,7 @@
 
                 <!--    =========================Dress-Collection-List 2===============-->
 
-                <div class="Dress-Collection-List Border-Right">
+                <div class="Dress-Collection-List Border-Right-Dress-Collection Border-Bottom-Dress-Collection">
                     <div class="Dress-Collection-List-items">
                         <img src="images/Dress__Collection/Accessories/Sophisticate.svg" alt="Dress Collection 2">
                         <div class="Container-Title-Dress-Collection">
@@ -398,7 +401,7 @@
 
                     <div class="button-container">
                         <a href="#" class="shop-btn">
-                            <span>Shop Now</span>
+                            <span>View All</span>
                             <img src="icons/Dress-Collection/Arrow-Top.svg" alt="Arrow">
                             <!--                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>-->
                         </a>
@@ -411,7 +414,7 @@
             <!--        <div class="Border-Bottom">-->
             <div class="Dress-Collection-Container-List ">
 
-                <div class="Dress-Collection-List Border-Right">
+                <div class="Dress-Collection-List Border-Right-Dress-Collection Border-Bottom-Dress-Collection  ">
                     <div class="Dress-Collection-List-items">
                         <img src="images/Dress__Collection/Bags-and-HandBags/Bold.svg" alt="Dress Collection 1">
                         <div class="Container-Title-Dress-Collection">
@@ -450,7 +453,7 @@
 
                 <!--    =========================Dress-Collection-List 2===============-->
 
-                <div class="Dress-Collection-List Border-Right">
+                <div class="Dress-Collection-List Border-Right-Dress-Collection Border-Bottom-Dress-Collection">
                     <div class="Dress-Collection-List-items">
                         <img src="images/Dress__Collection/Bags-and-HandBags/Night.svg" alt="Dress Collection 2">
                         <div class="Container-Title-Dress-Collection">
@@ -698,7 +701,7 @@
         </div> <!--End StyleLoom-->
         <div class="StyleLomm-Container-List">
             <div class="StyleLoom-Container-List-One">
-                <div class="StyleLoom-Container-List-items Border-Right">
+                <div class="StyleLoom-Container-List-items Border-Right Border-Top-StyleLoom ">
                     <div class="Customer">
                         <div class="information-Customer">
                             <img src="images/StyleLoom/Avatar-Customer/Sarah.svg" alt="Customer 1">
@@ -720,7 +723,7 @@
 
                 </div> <!--End StyleLomm-Container-List-items-->
 
-                <div class="StyleLoom-Container-List-items Border-Right">
+                <div class="StyleLoom-Container-List-items Border-Right Border-Top-StyleLoom">
                     <div class="Customer">
                         <div class="information-Customer">
                             <img src="images/StyleLoom/Avatar-Customer/Rajesh-Patel.svg" alt="Customer 1">
@@ -887,7 +890,7 @@
 
         <div class="Container-Questions-List">
             <div class="Questions-List">
-                <div class="Questions-List-Title Border-Right-Bottom">
+                <div class="Questions-List-Title Border-Right-Bottom-Questions">
                     <p>How can I place an order on StyleLoom?</p>
                     <p>Ordering is easy! Simply browse our website, add items to your cart, and proceed to checkout.
                         Follow the prompts to enter your details and complete your purchase.</p>
@@ -901,7 +904,7 @@
             </div>
 
             <div class="Questions-List">
-                <div class="Questions-List-Title Border-Right-Bottom">
+                <div class="Questions-List-Title Border-Right-Bottom-Questions">
                     <p>What payment methods do you accept?</p>
                     <p>We accept a variety of payment methods, including credit/debit cards, net banking, and select
                         digital wallets. Choose the option that suits you best during checkout.</p>
@@ -962,36 +965,36 @@
     <div class="stock-ticker">
         <ul>
             <li class="Content"><p>Tank Top</p></li>
-            <li class="Content"><img src="/Products-Page/icons/Sun.svg" alt="Sun"></li>
+            <li class="Content"><img src="/products/icons/Sun.svg" alt="Sun"></li>
             <li class="Content"><p>T-Shirt</p></li>
-            <li class="Content"><img src="/Products-Page/icons/Sun.svg" alt="Sun"></li>
+            <li class="Content"><img src="/products/icons/Sun.svg" alt="Sun"></li>
             <li class="Content"><p>Long-Sleeve T-Shirt</p></li>
-            <li class="Content"><img src="/Products-Page/icons/Sun.svg" alt="Sun"></li>
+            <li class="Content"><img src="/products/icons/Sun.svg" alt="Sun"></li>
             <li class="Content"><p>Raglan Sleeve Shirt</p></li>
-            <li class="Content"><img src="/Products-Page/icons/Sun.svg" alt="Sun"></li>
+            <li class="Content"><img src="/products/icons/Sun.svg" alt="Sun"></li>
             <li class="Content"><p>Crop Top</p></li>
-            <li class="Content"><img src="/Products-Page/icons/Sun.svg" alt="Sun"></li>
+            <li class="Content"><img src="/products/icons/Sun.svg" alt="Sun"></li>
             <li class="Content"><p>V-Neck Shirt</p></li>
-            <li class="Content"><img src="/Products-Page/icons/Sun.svg" alt="Sun"></li>
+            <li class="Content"><img src="/products/icons/Sun.svg" alt="Sun"></li>
             <li class="Content"><p>Muscle Shirt</p></li>
-            <li class="Content"><img src="/Products-Page/icons/Sun.svg" alt="Sun"></li>
+            <li class="Content"><img src="/products/icons/Sun.svg" alt="Sun"></li>
         </ul>
 
         <ul aria-hidden="true">
             <li class="Content"><p>Tank Top</p></li>
-            <li class="Content"><img src="/Products-Page/icons/Sun.svg" alt="Sun"></li>
+            <li class="Content"><img src="/products/icons/Sun.svg" alt="Sun"></li>
             <li class="Content"><p>T-Shirt</p></li>
-            <li class="Content"><img src="/Products-Page/icons/Sun.svg" alt="Sun"></li>
+            <li class="Content"><img src="/products/icons/Sun.svg" alt="Sun"></li>
             <li class="Content"><p>Long-Sleeve T-Shirt</p></li>
-            <li class="Content"><img src="/Products-Page/icons/Sun.svg" alt="Sun"></li>
+            <li class="Content"><img src="/products/icons/Sun.svg" alt="Sun"></li>
             <li class="Content"><p>Raglan Sleeve Shirt</p></li>
-            <li class="Content"><img src="/Products-Page/icons/Sun.svg" alt="Sun"></li>
+            <li class="Content"><img src="/products/icons/Sun.svg" alt="Sun"></li>
             <li class="Content"><p>Crop Top</p></li>
-            <li class="Content"><img src="/Products-Page/icons/Sun.svg" alt="Sun"></li>
+            <li class="Content"><img src="/products/icons/Sun.svg" alt="Sun"></li>
             <li class="Content"><p>V-Neck Shirt</p></li>
-            <li class="Content"><img src="/Products-Page/icons/Sun.svg" alt="Sun"></li>
+            <li class="Content"><img src="/products/icons/Sun.svg" alt="Sun"></li>
             <li class="Content"><p>Muscle Shirt</p></li>
-            <li class="Content"><img src="/Products-Page/icons/Sun.svg" alt="Sun"></li>
+            <li class="Content"><img src="/products/icons/Sun.svg" alt="Sun"></li>
         </ul>
     </div> <!-- End stock-ticker-->
 
@@ -1050,10 +1053,7 @@
                 <div class="email-input-wrapper">
                     <input type="email" placeholder="Your Email"/>
                     <button type="submit" class="arrow-submit">
-                        <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M11.25 0.75L18.75 8.25M18.75 8.25L11.25 15.75M18.75 8.25H0.75" stroke="#AE9B84"
-                                  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                        <img src="icons/Dress-Collection/Arrow-Right.svg" alt="Arrow Right">
                     </button>
                 </div>
             </div>
@@ -1066,8 +1066,8 @@
     <p>© 2024 StyleLoom. All rights reserved.</p>
 
     <div class="Footer">
-        <p>Terms & Conditions</p>
-        <p>Privacy Policy</p>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Privacy Policy</a>
 
     </div>
 </footer>
