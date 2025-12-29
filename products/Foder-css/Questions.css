@@ -221,6 +221,7 @@
 
     .Questions-List-Title{
         width: 100%;
+        padding: 30px;
     }
 
     .Questions-List-Title > p:first-of-type{

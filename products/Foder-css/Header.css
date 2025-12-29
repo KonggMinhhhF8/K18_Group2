@@ -60,13 +60,13 @@ header {
 }
 
 .corner-line.left .dot {
-    right: -1px;
+    right: -3px;
     bottom: -2px;
     /*transform: translate(50%, 50%);*/
 }
 
 .corner-line.right .dot {
-    left: -1px;
+    left: -3px;
     bottom: -2px;
     /*transform: translate(-50%, 50%);*/
 }
@@ -339,12 +339,12 @@ header {
         display: block;
         position: fixed;
         top: 0;
-        right: -1000%;
+        right: -100%;
         width: 70%;
         height: 100vh;
         background-color: #1A1A1A;
         z-index: 1000;
-        transition: 0.4s ease;
+        transition: 0.1s ease;
         padding: 20px;
     }
 
