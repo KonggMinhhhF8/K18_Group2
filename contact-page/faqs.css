@@ -1,19 +1,15 @@
-/* FAQ Section Styles */
-
 .faq-section {
-    padding: 0 0 100px 0;
-    /* Removing top padding to avoid double gap with testimonials section */
     color: #FFFFFF;
-    font-family: 'Inter', sans-serif;
 }
 
-/* Header Styles */
 .faq-header {
     border: 2px dashed #262626;
     border-radius: 20px 20px 0 0;
     padding: 80px;
     position: relative;
     overflow: hidden;
+    width: 85.77%;
+    margin: 0 auto;
 }
 
 .faq-title {
@@ -77,20 +73,20 @@
 }
 
 .faq-spiral-icon {
-    width: 350px;
+    width: 250px;
     height: auto;
 }
 
-/* Grid Layout */
 .faq-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     border: 2px dashed #262626;
     border-top: none;
     border-radius: 0 0 20px 20px;
+    width: 85.77%;
+    margin: 0 auto;
 }
 
-/* FAQ Item Styles */
 .faq-item {
     padding: 50px 60px;
     border-right: 2px dashed #262626;

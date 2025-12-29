@@ -1,5 +1,6 @@
 @media screen and (max-width: 1024px) {
 
+    .header-container,
     .contact-container,
     .return-container,
     .cancellation-container,
@@ -17,6 +18,14 @@
 
     .header-container {
         padding: 20px;
+    }
+
+    .corner-line {
+        display: none;
+    }
+
+    .spiral-icon {
+        width: 250px;
     }
 
     .contact-hero,

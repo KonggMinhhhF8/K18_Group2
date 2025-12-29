@@ -3,9 +3,47 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px dashed #262626;
-    max-width: 1200px;
+    width: 85.77%;
     margin: 0 auto;
     position: relative;
+}
+
+.corner-line {
+    position: absolute;
+    bottom: -1px;
+    width: 60px;
+    height: 60px;
+    border-bottom: 1px dashed #404040;
+}
+
+.corner-line.left {
+    left: calc(-50px - 30px);
+    border-right: 1px dashed #404040;
+}
+
+.corner-line.right {
+    right: calc(-50px - 30px);
+    border-left: 1px dashed #404040;
+}
+
+.dot {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: #0F0F0F;
+    z-index: 2;
+}
+
+.corner-line.left .dot {
+    right: 0;
+    bottom: 0;
+    transform: translate(50%, 50%);
+}
+
+.corner-line.right .dot {
+    left: 0;
+    bottom: 0;
+    transform: translate(-50%, 50%);
 }
 
 .menu-checkbox,
@@ -39,9 +77,13 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 150%;
-    border: 2px dashed #262626;
     padding: 18px 24px;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect x='0' y='0' width='calc(100%25 - 1px)' height='calc(100%25 - 1px)' fill='none' rx='12' ry='12' stroke='%23262626' stroke-width='2' stroke-dasharray='5%2c5' stroke-linecap='square'/%3e%3c/svg%3e");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
     border-radius: 12px;
+    border: none;
     margin-right: 14px;
 }
 
@@ -50,9 +92,9 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 150%;
-    padding: 18px 30px;
+    border: 2px dashed #262626;
+    padding: 18px 24px;
     border-radius: 12px;
-    background-color: #1A1A1A;
 }
 
 .header-button-2 button:first-child {

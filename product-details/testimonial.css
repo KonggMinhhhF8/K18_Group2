@@ -2,7 +2,6 @@
 
 .testimonials-section {
     padding: 100px 0;
-    /* Aligning with the 100px margin-bottom of the section above */
     color: #FFFFFF;
     font-family: 'Inter', sans-serif;
 }
@@ -14,7 +13,7 @@
     align-items: center;
     border: 2px dashed #262626;
     border-radius: 20px 20px 0 0;
-    padding: 80px;
+    padding: 50px 80px;
     position: relative;
     overflow: hidden;
 }
@@ -62,18 +61,8 @@
 /* Card Styles */
 .testimonial-card {
     padding: 50px 30px 50px 60px;
-    /* Reduced right padding to bring icon closer to border */
     border-right: 2px dashed #262626;
     border-bottom: 2px dashed #262626;
-}
-
-
-.testimonial-card:nth-child(3n) {
-    border-right: none;
-}
-
-.testimonial-card:nth-last-child(-n+3) {
-    border-bottom: none;
 }
 
 .card-header {
