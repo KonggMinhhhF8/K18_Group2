@@ -82,13 +82,62 @@
         right: 0;
     }
 
+    .corner-line {
+        display: none;
+    }
+
+    .header-container{
+        margin: 10px;
+        width: auto;
+        overflow: hidden;
+    }
+
+    .contact-container,
+    .return-container,
+    .cancellation-container,
+    .faq-section,
+    .testimonials-section
+     {
+        margin: 40px 10px;
+        width: auto;
+        border: 2px dashed #262626;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .footer-section{
+        margin: 20px 10px;
+        width: auto;
+        overflow: hidden;
+    }
+
+    .wardrobe-container{
+        margin: 40px 10px;
+        width: auto;
+        overflow: hidden;
+        flex-direction: column;
+        padding: 60px 20px;
+        gap: 30px;
+        align-items: flex-start;
+        text-align: left;
+        min-height: auto;
+        background-color: #C2B4A3;
+        position: relative;
+    }
+
+    .marquee-section{
+        margin: 40px 10px;
+        width: auto;
+        border-top: 2px dashed #262626;
+        border-bottom: 2px dashed #262626;
+        overflow: hidden;
+    }
+
     .header-container {
-        padding: 20px 24px;
+        padding: 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        max-width: 100%;
-        border-bottom: 2px dashed #262626;
     }
 
     .header-logo {
@@ -122,39 +171,6 @@
         height: 24px;
     }
 
-    .contact-container,
-    .return-container,
-    .cancellation-container,
-    .faq-section {
-        margin: 20px;
-        /* Add margin to look like a card */
-        width: auto;
-        /* Allow margin to take effect */
-        border: 2px dashed #262626;
-        /* Add border */
-        border-radius: 20px;
-        overflow: hidden;
-        /* Ensure children don't overflow radius */
-    }
-
-    .testimonials-section {
-        margin: 20px 20px 80px 20px;
-        /* Specific bottom margin for 80px gap */
-        width: auto;
-        border: 2px dashed #262626;
-        border-radius: 20px;
-        overflow: hidden;
-    }
-
-    .wardrobe-container {
-        margin: 20px;
-        width: auto;
-        border-radius: 20px;
-        overflow: hidden;
-        background-color: #C2B4A3;
-        position: relative;
-    }
-
     /* Reset Contact Hero to fit inside container */
     .contact-hero {
         margin: 0;
@@ -162,7 +178,7 @@
         border-radius: 0;
         border-bottom: 2px dashed #262626;
         flex-direction: column;
-        padding: 40px 24px;
+        padding: 40px 20px;
         text-align: left;
     }
 
@@ -197,7 +213,7 @@
     }
 
     .contact-card {
-        padding: 40px 24px;
+        padding: 40px 20px;
         border: none;
         border-radius: 0;
         border-bottom: 2px dashed #262626;
@@ -207,31 +223,31 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        margin-left: -24px;
-        margin-right: -24px;
-        padding-left: 48px;
-        padding-right: 48px;
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
     .contact-card:last-child {
         border-bottom: 2px dashed #262626;
-        margin-left: -24px;
-        margin-right: -24px;
-        padding-left: 48px;
-        padding-right: 48px;
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
     .return-header,
     .cancellation-header {
-        padding: 30px 24px;
+        padding: 30px 20px;
         flex-direction: column;
         align-items: flex-start;
         gap: 20px;
         border-bottom: 2px dashed #262626;
-        margin-left: -24px;
-        margin-right: -24px;
-        padding-left: 48px;
-        padding-right: 48px;
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
     .return-btn,
@@ -253,13 +269,13 @@
 
     .return-card,
     .cancellation-card {
-        padding: 30px 24px;
+        padding: 30px 20px;
         border-right: none;
         border-bottom: 2px dashed #262626;
-        margin-left: -24px;
-        margin-right: -24px;
-        padding-left: 48px;
-        padding-right: 48px;
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
     .return-card-content,
@@ -270,23 +286,20 @@
     .return-card:last-child,
     .cancellation-card:last-child {
         border-bottom: 2px dashed #262626;
-        margin-left: -24px;
-        margin-right: -24px;
-        padding-left: 48px;
-        padding-right: 48px;
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
     .testimonials-header {
         flex-direction: column;
         align-items: flex-start;
-        padding: 40px 24px;
+        padding: 40px 20px;
         border: none;
         border-radius: 0;
         border-bottom: 2px dashed #262626;
-        margin-left: -24px;
-        margin-right: -24px;
-        padding-left: 48px;
-        padding-right: 48px;
+        width: 100%;
     }
 
     .testimonials-title {
@@ -316,26 +329,26 @@
     }
 
     .testimonial-card {
-        padding: 40px 24px;
+        padding: 40px 20px;
         border-right: none !important;
         border-bottom: 2px dashed #262626;
-        margin-left: -24px;
-        margin-right: -24px;
-        padding-left: 48px;
-        padding-right: 48px;
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
     .testimonial-card:last-child {
         border-bottom: 2px dashed #262626;
-        margin-left: -24px;
-        margin-right: -24px;
-        padding-left: 48px;
-        padding-right: 48px;
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
     .testimonials-footer {
         border: none;
-        padding: 30px 24px;
+        padding: 30px 20px;
         display: flex;
         justify-content: center;
         background-color: #111111;
@@ -363,14 +376,11 @@
     }
 
     .faq-header {
-        padding: 40px 24px;
+        padding: 40px 20px;
         border: none;
         border-radius: 0;
         border-bottom: 2px dashed #262626;
-        margin-left: -24px;
-        margin-right: -24px;
-        padding-left: 48px;
-        padding-right: 48px;
+        width: 100%;
     }
 
     .faq-title {
@@ -429,21 +439,21 @@
     }
 
     .faq-item {
-        padding: 40px 24px;
+        padding: 40px 20px;
         border-right: none !important;
         border-bottom: 2px dashed #262626;
-        margin-left: -24px;
-        margin-right: -24px;
-        padding-left: 48px;
-        padding-right: 48px;
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
     .faq-item:last-child {
         border-bottom: 2px dashed #262626;
-        margin-left: -24px;
-        margin-right: -24px;
-        padding-left: 48px;
-        padding-right: 48px;
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
     .faq-item:nth-last-child(-n+2) {
@@ -452,23 +462,10 @@
 
     .faq-footer {
         border: none;
-        padding: 30px 24px;
+        padding: 30px 20px;
         display: flex;
         justify-content: center;
         background-color: #111111;
-    }
-
-    .wardrobe-container {
-        flex-direction: column;
-        padding: 60px 24px;
-        gap: 30px;
-        align-items: flex-start;
-        text-align: left;
-        min-height: auto;
-        background-color: #C2B4A3;
-        position: relative;
-        overflow: hidden;
-        border-bottom: 2px dashed #262626;
     }
 
     .wardrobe-content {
@@ -543,13 +540,11 @@
     .footer-top {
         flex-direction: column;
         align-items: flex-start;
-        padding: 40px 24px;
+        padding: 40px 20px;
         gap: 30px;
-        border-bottom: 2px dashed #262626;
     }
 
     .footer-logo {
-        height: 60px;
         width: auto;
     }
 
@@ -561,8 +556,7 @@
 
     .footer-links-column,
     .footer-newsletter {
-        padding: 40px 24px;
-        border-bottom: 2px dashed #262626;
+        padding: 20px 20px;
         justify-self: stretch;
         width: 100%;
         box-sizing: border-box;
@@ -576,17 +570,18 @@
     .footer-bottom {
         flex-direction: column;
         align-items: flex-start;
-        padding: 30px 24px;
+        padding: 30px 20px;
         gap: 20px;
     }
 
     .legal-links {
-        flex-direction: column;
+        display: flex;
         align-items: flex-start;
         gap: 10px;
     }
 
-    .pipe {
-        display: none;
+
+    .wardrobe-section {
+        padding: 0;
     }
 }
