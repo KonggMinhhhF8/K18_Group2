@@ -18,13 +18,13 @@ footer{
     justify-content: center;
 }
 
-.Footer > p:first-of-type::after{
+.Footer > a:first-of-type::after{
     content: "|";
     padding: 0 11px;
     color: #81807E;
 }
 
-footer > p{
+footer > a {
     color: #81807E;
     font-family: 'Roboto Mono', monospace;
     font-weight: 700;
@@ -32,7 +32,7 @@ footer > p{
     line-height: 150%;
 }
 
-.Footer > p {
+.Footer > a  {
     color: #81807E;
     font-family: 'Roboto Mono', monospace;
     font-weight: 700;
@@ -70,6 +70,10 @@ footer > p{
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
+    }
+
+    .Footer > a{
+        font-size: 14px;
     }
 
 }

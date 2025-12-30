@@ -11,22 +11,23 @@ header {
     padding: 0 20px;
 }
 
+
 .header-Top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 85.77%;
     margin: 0 auto;
-    background-image: linear-gradient(to right, #262626 50%, rgba(255, 255, 255, 0) 0%);
+    padding: 30px 0;
+
+    background-image: linear-gradient(to right, #262626 50%, transparent 50%);
     background-position: bottom;
-    /* 10px = 5px nét gạch + 5px khoảng trắng */
-    background-size: 10px 1px;
+
+    background-size: 15px 1px;
     background-repeat: repeat-x;
 
     border: none;
-    border-radius: 0;
     position: relative;
-    padding: 30px 0;
 }
 
 
@@ -36,6 +37,7 @@ header {
     width: 60px;
     height: 60px;
     border-bottom: 1px dashed #404040;
+    z-index: 1;
 }
 
 .corner-line.left {
@@ -50,22 +52,23 @@ header {
 
 .dot {
     position: absolute;
-    width: 50%;
-    height: 50%;
+    width: 20px;
+    height: 20px;
+
     background-color:#0F0F0F;
     z-index: 2;
 }
 
 .corner-line.left .dot {
-    right: 0;
-    bottom: 0;
-    transform: translate(50%, 50%);
+    right: -3px;
+    bottom: -2px;
+    /*transform: translate(50%, 50%);*/
 }
 
 .corner-line.right .dot {
-    left: 0;
-    bottom: 0;
-    transform: translate(-50%, 50%);
+    left: -3px;
+    bottom: -2px;
+    /*transform: translate(-50%, 50%);*/
 }
 .Category, .Contact-Details {
     display: flex;
@@ -85,6 +88,7 @@ header {
 .btn-home {
     color: #B3B3B2;
     padding: 18px 24px;
+    font-size: 18px;
     background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect x='0' y='0' width='calc(100%25 - 1px)' height='calc(100%25 - 1px)' fill='none' rx='12' ry='12' stroke='%23262626' stroke-width='2' stroke-dasharray='5%2c5' stroke-linecap='square'/%3e%3c/svg%3e");
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -99,6 +103,7 @@ header {
     background-color: #1A1A1A;
     color: #FFFFFF;
     padding: 18px 30px;
+    font-size: 18px;
     font-weight: 700;
     font-family: "Roboto Mono", monospace ;
 }
@@ -178,22 +183,20 @@ header {
 
     .dot {
         position: absolute;
-        width: 50%;
-        height: 50%;
+        width: 15px;
+        height: 15px;
         background-color:#0F0F0F;
         z-index: 2;
     }
 
     .corner-line.left .dot {
-        right: 0;
-        bottom: 0;
-        transform: translate(50%, 50%);
+        right: -2px;
+        bottom: -2px;
     }
 
     .corner-line.right .dot {
-        left: 0;
-        bottom: 0;
-        transform: translate(-50%, 50%);
+        left: -2px;
+        bottom: -2px;
     }
     .Category, .Contact-Details {
         display: flex;
@@ -280,7 +283,7 @@ header {
         width: 97%;
         margin: 0 auto;
         padding: 40px 0 20px 0;
-        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='99.9%25' height='100%25' fill='none' rx='0' ry='0' stroke='%23262626' stroke-width='2' stroke-dasharray='16%2c6' stroke-linecap='square'/%3e%3c/svg%3e");
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='99.9%25' height='99.7%25' fill='none' rx='0' ry='0' stroke='%23262626' stroke-width='1' stroke-dasharray='16%2c6' stroke-linecap='square'/%3e%3c/svg%3e");
         background-size: 100% 100%;
         background-repeat: no-repeat;
 
@@ -315,25 +318,40 @@ header {
 
     }
 
+    .Contact-Details-Mobile{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-direction: row;
+
+    }
+
+    .Contact-Details-Mobile > a{
+        width: 50%;
+        padding: 14px;
+    }
+    .Contact-Details-Mobile > img{
+     width: 24px;
+        height: 24px;
+    }
+
     .Container-List-Menu-Mobile {
         display: block;
         position: fixed;
         top: 0;
-        right: -1000%;
-        width: 280px;
+        right: -100%;
+        width: 70%;
         height: 100vh;
         background-color: #1A1A1A;
         z-index: 1000;
-        transition: 0.4s ease;
+        transition: 0.1s ease;
         padding: 20px;
     }
 
     .Mobile-Top,
     .Mobile-Top > img,
     .Times,
-    .List-Menu-Mobile a,
-    .mobile-cart-link > span,
-    .mobile-cart-link > img{
+    .List-Menu-Mobile a{
         background-color: #1A1A1A;
     }
 
@@ -353,7 +371,10 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='99%25' fill='none' rx='0' ry='0' stroke='%23262626' stroke-width='2' stroke-dasharray='5%2c5' stroke-dashoffset='83' stroke-linecap='square'/%3e%3c/svg%3e");
+        clip-path: inset(2px 2px 0 2px);
     }
 
     .Times {
@@ -371,5 +392,11 @@ header {
         font-weight: 600;
         border-bottom: 1px solid #262626;
         gap: 10px;
+    }
+
+    .Mobile-Actions{
+        display: flex;
+        align-items: center;
+        gap: 15px;
     }
 }

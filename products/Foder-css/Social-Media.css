@@ -2,7 +2,7 @@
 .Container-Media{
     clear: both;
     width: 100vw;
-    margin: 220px auto 0 auto;
+    margin: 56px auto 0 auto;
     justify-content: space-between;
     margin-left: calc(-50vw + 50%);
     margin-right: calc(-50vw + 50%);
@@ -99,12 +99,10 @@
 
 .arrow-submit {
     background: transparent;
-    border: none;
-    color: #c2b4a3; /* Màu đồng của mũi tên */
-    cursor: pointer;
-    padding: 0;
+    color: #c2b4a3;
     display: flex;
     align-items: center;
+    margin-left: 10px;
 }
 
 
@@ -143,6 +141,7 @@
     align-items: center;
     flex-direction: row;
     gap: 50px;
+    width: 60%;
     flex-wrap: wrap;
 }
 
@@ -190,8 +189,6 @@
 
     .Container-Social-Media{
         padding: 80px;
-        top: 0;
-
     }
 
 
@@ -242,9 +239,11 @@
     }
 
     .Container-Social-Media{
-        padding: 50px 16px;
+        padding: 40px 16px;
         gap: 30px;
         top: -50px;
+        clip-path: inset(3px 3px 0 3px);
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='99.5%25' fill='none' rx='0' ry='0' stroke='%23262626' stroke-width='1' stroke-dasharray='16%2c6' stroke-dashoffset='83' stroke-linecap='square'/%3e%3c/svg%3e");
     }
 
     .Container-Media-Bottom{
@@ -255,7 +254,10 @@
         align-items: flex-start;
         justify-content: center;
         width: 100%;
+        clip-path: inset(3px 3px 0 3px);
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='99%25' fill='none' rx='0' ry='0' stroke='%23262626' stroke-width='1' stroke-dasharray='16%2c6' stroke-dashoffset='83' stroke-linecap='square'/%3e%3c/svg%3e");
     }
+
     .Home-Footer > p{
         font-size: 16px;
     }
@@ -269,8 +271,13 @@
         max-width: 100%;
     }
 
+    .email-input-wrapper > input::placeholder{
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
     .email-input-wrapper{
-        padding: 18px 20px;
+        padding: 12px 20px 14px 20px;
         width: 100%;
         max-width: 100%;
         border-radius: 7px;
@@ -282,9 +289,8 @@
 
     .Container-Home-Footer{
         gap: 30px;
-    }
-    .Home-Footer{
-        gap: 10px;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .Social-Media-icon > a{

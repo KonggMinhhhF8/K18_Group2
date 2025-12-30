@@ -4,14 +4,19 @@
     justify-content: space-between;
     width: 100%;
     margin: 0 auto;
+    position: relative;
     overflow: hidden;
+}
+
+.border{
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='99.9%25' height='100%25' fill='none' rx='25' ry='25' stroke='%23262626' stroke-width='2' stroke-dasharray='16%2c6' stroke-dashoffset='83' stroke-linecap='square'/%3e%3c/svg%3e");
 }
 
 .Container-Banner {
     flex: 3;
     padding: 80px 0 80px 80px;
     min-width: 0;
-    width: 70%;
+    max-width: 70%;
 }
 
 .Banner-Image {
@@ -27,7 +32,7 @@
     width: 100%;
     max-width: 300px;
     height: 100%;
-    /*max-height: 450px;*/
+    border-radius: 25px;
     object-fit: contain;
     display: block;
 }
@@ -109,6 +114,18 @@
 
 .Banner-Title-Mobile{
     display: none;
+}
+
+.Banner> img{
+    display: block;
+    object-fit: contain;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 25px 25px 0 0;
 }
 
 
@@ -214,6 +231,12 @@
         height: auto;
     }
 
+    .border{
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='99.9%25' height='100%25' fill='none' rx='20' ry='20' stroke='%23262626' stroke-width='2' stroke-dasharray='16%2c6' stroke-dashoffset='83' stroke-linecap='square'/%3e%3c/svg%3e");
+        width: 100%;
+        margin: 0 auto;
+    }
+
 }
 
 @media screen and (max-width: 768px){
@@ -240,9 +263,10 @@
         border-radius: 0;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         flex-direction: column;
         width: 100%;
+        max-width: 100%;
 
     }
     .Banner-Title-Mobile{
@@ -273,21 +297,27 @@
     .Products--List{
         width: 100%;
         margin-top: 30px;
-        gap: 4%;
+        gap: 12px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
-        flex-shrink: 10;
         flex-wrap: nowrap;
-
+        scroll-behavior: smooth;
+        overflow-x: auto;
+        overflow-y: hidden;
 
     }
+
+    .Products--List::-webkit-scrollbar {
+        display: none;             /* Ẩn trên Chrome, Safari */
+    }
+
     .Products--List > a:first-of-type,
     .Products--List > a:nth-of-type(2),
     .Products--List > a:last-of-type{
         width: 48%;
-        padding: 14px 20px;
+        padding: 14px 24px;
         font-size: 14px;
         line-height: 150%;
         border-radius: 8px;
@@ -295,7 +325,7 @@
         flex-shrink: 10;
         border: 0;
 
-        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect x='0' y='0' width='calc(100%25 - 1px)' height='calc(100%25 - 1px)' fill='none' rx='8' ry='8' stroke='%23262626' stroke-width='1' stroke-dasharray='5%2c5' stroke-linecap='square'/%3e%3c/svg%3e");
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='99%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect x='1' y='1' width='calc(100%25 - 2px)' height='calc(100%25 - 2px)' fill='none' rx='8' ry='8' stroke='%23262626' stroke-width='1' stroke-dasharray='5%2c5' stroke-linecap='square'/%3e%3c/svg%3e");
         background-size: 100% 100%;
         background-repeat: no-repeat;
 
@@ -313,5 +343,13 @@
 
     .Products--List > a:hover{
         background-image: none;
+    }
+
+    .border{
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='99.7%25' height='99.8%25' fill='none' rx='12' ry='12' stroke='%23262626' stroke-width='1' stroke-dasharray='16%2c6' stroke-dashoffset='83' stroke-linecap='square'/%3e%3c/svg%3e");
+    }
+
+    .Banner> img{
+        display: none;
     }
 }

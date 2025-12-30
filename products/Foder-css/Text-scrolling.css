@@ -1,82 +1,68 @@
-.stock-ticker{
-    position: relative;
-    right: 0;
-    display: flex;
-    flex-direction: row;
-    padding: 50px 0;
-    align-items: center;
-    z-index: 1;
-    clip-path: inset( 0 3px 0 3px );
-    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='99.5%25' fill='none' rx='0' ry='0' stroke='%23262626' stroke-width='2' stroke-dasharray='16%2c6' stroke-dashoffset='83' stroke-linecap='square'/%3e%3c/svg%3e");
-    width: 100vw;
-    margin-top: 100px;
-    left: 50%;
-    transform: translateX(-50%);
-    overflow: hidden;
-}
-
-
-
-.Content{
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-    align-items: center;
-    justify-content: center;
-}
-
-.Content > p{
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 120%;
-    text-transform: uppercase;
-    color: #333333;
-    white-space: nowrap;
-
-}
-
-
-:root {
-    --gap: 20px;
-    --duration: 25s;
-}
-
-.stock-ticker {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100vw;
-    display: flex;
-    overflow: hidden;
-    padding: 50px 0;
-    user-select: none;
-    gap: var(--gap);
-}
-
-.stock-ticker ul {
-    list-style: none;
-    flex-shrink: 0;
-    min-width: 100%;
-    display: flex;
-    align-items: center;
-    gap: var(--gap);
-    animation: scroll var(--duration) linear infinite;
-    will-change: transform;
-}
-
-@keyframes scroll {
-    from {
-        transform: translateX(0);
-    }
-    to {
-        transform: translateX(calc(-100% - var(--gap)));
-    }
-}
-
 .stock-ticker:hover ul{
     animation-play-state: paused;
 }
 
+
+:root {
+    --gap: 16px;
+    --duration: 25s;
+}
+
+.stock-ticker {
+    position: relative;
+    width: 100vw;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    overflow: hidden;
+    padding: 50px 0;
+    user-select: none;
+    gap: 0;
+
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23262626' stroke-width='2' stroke-dasharray='16%2c6'/%3e%3c/svg%3e");
+}
+
+.stock-ticker ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+
+    gap: var(--gap);
+
+    padding-right: var(--gap);
+
+    min-width: max-content;
+
+    animation: scroll var(--duration) linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.Content {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-shrink: 0;
+}
+
+.Content p {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #333;
+    white-space: nowrap;
+    margin: 0;
+}
 
 @media screen and (max-width: 992px){
     .stock-ticker{
@@ -93,7 +79,8 @@
 @media screen and (max-width: 768px){
     .stock-ticker{
         padding: 30px 0;
-        gap: 12px;
+        gap: 8px;
+        top:0;
         margin-top: 50px;
     }
 
